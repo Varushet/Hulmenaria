@@ -1,0 +1,57 @@
+*   {padding: 0; margin: 0;}
+a   {text-decoration: none; color: white}
+
+header {
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+h1{
+    font-size: 3rem;
+    font-family: "UnifrakturMaguntia";
+}
+h3{
+    text-align: center;
+}
+h4{
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: "MedievalSharp";
+}
+.logo > img{
+    width: 6rem;
+}
+Nav{
+    background-color: rgb(238, 13, 43);
+    padding: 2rem;
+}
+.tools {
+    display: flex;
+    justify-content: center;
+}
+.tools div{
+    margin: 1rem;
+    background-color: aqua;
+    border: 5px double black;
+}
+nav img{
+    width: 9rem;
+}
+main{
+    background-color: aqua;
+}
+.team{
+    background-color: pink;
+    padding: 2rem;
+}
+.road{
+    padding: 2rem 3rem;
+}
+.webst{
+    background-color: greenyellow;
+    width: 30%;
+    height: 10px;
+    border-radius: 1rem;
+}
