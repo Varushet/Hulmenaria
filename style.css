@@ -48,10 +48,28 @@ main{
 }
 .road{
     padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 40rem;
 }
-.webst{
+main > h4{
+    padding-top: 2rem;
+}
+.sts{
+    background-color: rebeccapurple;
+    width: 50%;
+}
+.bar{
     background-color: greenyellow;
-    width: 30%;
+    width: 80%;
     height: 10px;
     border-radius: 1rem;
+}
+.list{
+    column-count: 2;
+    height: auto;
+}
+.list > li{
+    margin: 0 1rem;
 }
