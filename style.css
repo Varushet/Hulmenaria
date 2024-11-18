@@ -1,6 +1,7 @@
 *   {padding: 0; margin: 0;}
-a   {text-decoration: none; color: white}
-
+a   {text-decoration: none; color: black;}
+li  {list-style: none;}
+/*Reset*/
 header {
     background-color: rebeccapurple;
     display: flex;
@@ -8,53 +9,53 @@ header {
     align-items: center;
     padding: 2rem;
 }
-h1{
+.logo img{
+    width: 6rem;
+}
+h1{ /*Hulmenaria*/
     font-size: 3rem;
     font-family: "UnifrakturMaguntia";
 }
-h3{
+h2{ /*Página*/
+    margin: 0 auto;
+}
+h3{ /*Herramientas*/
     text-align: center;
 }
-h4{
+h4{ /*Secciones*/
     font-size: 1.7rem;
     text-align: center;
     font-family: "MedievalSharp";
+    padding-bottom: 1rem;
 }
-.logo > img{
-    width: 6rem;
+h5{ /**/
+    margin: 0 auto;
+}
+h6{ /**/
+    margin: 0 auto;
+}
+main{
+    background-color: aqua;
 }
 Nav{
     background-color: rgb(238, 13, 43);
-    padding: 2rem;
+    padding: 2rem 0;
 }
 .tools {
     display: flex;
     justify-content: center;
 }
 .tools div{
-    margin: 1rem;
+    margin: 0.5rem;
     background-color: aqua;
     border: 5px double black;
 }
 nav img{
     width: 9rem;
 }
-main{
-    background-color: aqua;
-}
 .team{
     background-color: pink;
     padding: 2rem;
-}
-.road{
-    padding: 2rem 3rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 40rem;
-}
-main > h4{
-    padding-top: 2rem;
 }
 .sts{
     background-color: rebeccapurple;
@@ -71,5 +72,26 @@ main > h4{
     height: auto;
 }
 .list > li{
-    margin: 0 1rem;
+    margin: 0 0.2rem;
+}
+
+/*Pestaña Roadmap*/
+
+#roadmap{
+    display: none;
+}
+.road{
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 1s ease;
+}
+#roadmap:checked ~ #road{
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 40rem;
+    opacity: 1;
+    max-height: 50rem;
 }
