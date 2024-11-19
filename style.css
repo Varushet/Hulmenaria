@@ -27,9 +27,20 @@ h4{ /*Secciones*/
     text-align: center;
     font-family: "MedievalSharp";
     padding-bottom: 1rem;
+    background-color: rebeccapurple;
 }
-h5{ /**/
+h4:hover{
+    transition: 2s;
+    background-image: url(/img/castle-hover.png);
+    background-size: 30% 100% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: bottom;
+}
+h5{ /*Nombres Propios*/
     margin: 0 auto;
+    font-family: "MedievalSharp";
+    text-align: center;
 }
 h6{ /**/
     margin: 0 auto;
@@ -55,7 +66,6 @@ nav img{
 }
 .team{
     background-color: pink;
-    padding: 2rem;
 }
 .sts{
     background-color: rebeccapurple;
@@ -94,4 +104,10 @@ nav img{
     height: 40rem;
     opacity: 1;
     max-height: 50rem;
+}
+footer{}
+.cop{
+    background-color: blue;
+    text-align: center;
+    position: bottom;
 }

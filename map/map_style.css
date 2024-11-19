@@ -1,6 +1,37 @@
-aside{
-    position: fixed;
-    left: 1rem;
-    width: 5rem;
-    height: 100%;
+section label{
+    font-size: 2rem;
+    padding: 2rem;
+}
+section label:hover{
+    transition: 2s;
+    background-image: url(/img/castle-hover.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+}
+section div{
+    overflow: scroll;
+}
+section input{
+    display: none;
+}
+#argoll{
+    display: none;
+    border: 4px double red;    
+}
+.cuarentena{
+    border: 4px double red;
+}
+#argoll-butt:checked ~ #argoll{
+    display: block;
+}
+#cuarentena-butt:not(:checked) ~ #cuarentena{
+    display: none;
+}
+.layers{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
 }
