@@ -1,14 +1,5 @@
 section label{
     font-size: 2rem;
-    padding: 2rem;
-}
-section label:hover{
-    transition: 2s;
-    background-image: url(/img/castle-hover.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: border-box;
 }
 section div{
     overflow: scroll;

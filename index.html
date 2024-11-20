@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <style>
-section h4{ padding: 2rem;}
+
 </style>
 <body>
     <header>
@@ -18,14 +18,15 @@ section h4{ padding: 2rem;}
            <a href="/index.html"><img src="/img/Logo.png" alt="Logo"></a>
         </div>
         <div>Log In</div>
-
     </header>
     <nav>
-        <h4>RPG Tools</h4>
+        <label for="navi" id="navi-lab" id="Mbridge">
+            <h4 >RPG Tools</h4></label>
+            <input type="checkbox" id="navi">
         <div class="tools">
             <div>
                 <h3>PJ Sheet</h3>
-                <a href="&"><img src="/img/ficha.png" alt="Character sheet"></a>
+                <a href="/perfil/perfil.html"><img src="/img/ficha.png" alt="Character sheet"></a>
             </div>
             <div>
                 <h3>Loot Table</h3>
@@ -43,13 +44,13 @@ section h4{ padding: 2rem;}
     </nav>
     <main>
         <article class="team">
-            <label for=""><h4>Asterión Team</h4></label>
+            <h4 id="Lbridge">Hulmenaria Team</h4>
             <img src="" alt="Personal Photo">
             <p>Alejandro Serrato - Varushet</p>
         </article>
         <section>
                 <label for="roadmap" id="roadmap-lab">
-                    <h4>Roadmap</h4></label>
+                    <h4 id="Mbridge">Roadmap</h4></label>
                     <input type="checkbox" id="roadmap">
             <div class="road" id="road">
                 <div class="sts">Web Status
@@ -176,20 +177,22 @@ section h4{ padding: 2rem;}
         </section>
     </main>
     <footer>
-        <div>
+        <div class="location">
             <h3>LOCATION</h3>
             <p>48993 Getxo, Bizkaia, Basque Country</p>
         </div>
         <div>
             <h3>Social Networks</h3>
-            <a href="&"><img src="" alt="Kick Starter"></a>
-            <a href="&"><img src="" alt="Instagram"></a>
-            <a href="&"><img src="https://discord.com/channels/697897720865751091/774173789196910602" alt="Discord"></a>
-            <a href="&"><img src="" alt="Twitch"></a>
-            <a href="&"><img src="https://github.com/Varushet/RPG" alt="GitHub"></a>
+            <div class="social">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/426px-Discord_Logo_sans_texte.svg.png"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/426px-Discord_Logo_sans_texte.svg.png" alt="Instagram"></a>
+            <a href="https://discord.com/channels/697897720865751091/774173789196910602" alt="Discord"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/426px-Discord_Logo_sans_texte.svg.png"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/426px-Discord_Logo_sans_texte.svg.png" alt="Twitch"></a>
+            <a href="https://github.com/Varushet/RPG"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/426px-Discord_Logo_sans_texte.svg.png" alt="GitHub"></a>
+            </div>
         </div>
-        <div>
-            <h3>ABOUT Hulmenaria</h3>
+        <div class="about">
+            <h3>ABOUT</h3>
             <p>aaaa</p>
         </div>
     </footer>

@@ -12,6 +12,50 @@ header {
 .logo img{
     width: 6rem;
 }
+#Sbridge{
+    transition: 2s;
+    background-image: url(/img/Scastle-hover.png);
+    background-size: 75% 95%;
+    background-repeat: no-repeat;
+    background-position: 50% 8rem;
+}
+#Sbridge:hover{
+    transition: 2s;
+    background-image: url(/img/Scastle-hover.png);
+    background-size: 75% 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Mbridge{
+    transition: 2s;
+    background-image: url(/img/castle-hover.png);
+    background-size: 65% 95% ;
+    background-repeat: no-repeat;
+    background-position:  50% 8rem;
+}
+#Mbridge:hover{
+    transition: 2s;
+    background-image: url(/img/castle-hover.png);
+    background-size: 65% 95% ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Lbridge{
+    transition: 2s;
+    background-image: url(/img/castle-hover.png);
+    background-size: 100% 95% ;
+    background-repeat: no-repeat;
+    background-position: 50% 8rem;
+    background-origin: bottom;
+}
+#Lbridge:hover{
+    transition: 2s;
+    background-image: url(/img/castle-hover.png);
+    background-size: 100% 95% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: bottom;
+}
 h1{ /*Hulmenaria*/
     font-size: 3rem;
     font-family: "UnifrakturMaguntia";
@@ -26,21 +70,17 @@ h4{ /*Secciones*/
     font-size: 1.7rem;
     text-align: center;
     font-family: "MedievalSharp";
-    padding-bottom: 1rem;
-    background-color: rebeccapurple;
-}
-h4:hover{
-    transition: 2s;
-    background-image: url(/img/castle-hover.png);
-    background-size: 30% 100% ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: bottom;
+    padding: 2rem 0;
+    margin: 0 auto;
+    width: 20rem;
 }
 h5{ /*Nombres Propios*/
-    margin: 0 auto;
-    font-family: "MedievalSharp";
+    font-size: 1.7rem;
     text-align: center;
+    font-family: "MedievalSharp";
+    padding: 2rem 0;
+    margin: 0 auto;
+    width: 20rem;
 }
 h6{ /**/
     margin: 0 auto;
@@ -50,7 +90,6 @@ main{
 }
 Nav{
     background-color: rgb(238, 13, 43);
-    padding: 2rem 0;
 }
 .tools {
     display: flex;
@@ -64,6 +103,7 @@ Nav{
 nav img{
     width: 9rem;
 }
+            /*Navegador*/
 .team{
     background-color: pink;
 }
@@ -85,7 +125,7 @@ nav img{
     margin: 0 0.2rem;
 }
 
-/*Pestaña Roadmap*/
+            /*Pestaña Roadmap*/
 
 #roadmap{
     display: none;
@@ -105,7 +145,27 @@ nav img{
     opacity: 1;
     max-height: 50rem;
 }
-footer{}
+footer{
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer img{
+    width: 2rem;
+}
+.social{
+    width: 15rem;
+    display: flex;
+    justify-content: space-around;
+}
+.location{
+    width: 10rem;
+    text-align: center;
+}
+.about{
+    text-align: center;
+}
 .cop{
     background-color: blue;
     text-align: center;
