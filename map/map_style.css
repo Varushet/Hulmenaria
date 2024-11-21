@@ -17,12 +17,31 @@ section input{
 #argoll-butt:checked ~ #argoll{
     display: block;
 }
+#argoll-butt:checked ~ #argoll-lab>#Sbridge{
+    transition: 2s;
+    background-image: url(/img/Scastle-hover.png);
+    background-size: 75% 95%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #cuarentena-butt:not(:checked) ~ #cuarentena{
     display: none;
+}
+#cuarentena-butt:checked ~ #cuarentena-lab>#Mbridge{
+    transition: 2s;
+    background-image: url(/img/castle-hover.png);
+    background-size: 65% 95% ;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .layers{
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 1rem;
+}
+section{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
 }

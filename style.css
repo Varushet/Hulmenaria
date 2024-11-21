@@ -19,26 +19,12 @@ header {
     background-repeat: no-repeat;
     background-position: 50% 8rem;
 }
-#Sbridge:hover{
-    transition: 2s;
-    background-image: url(/img/Scastle-hover.png);
-    background-size: 75% 95%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 #Mbridge{
     transition: 2s;
     background-image: url(/img/castle-hover.png);
     background-size: 65% 95% ;
     background-repeat: no-repeat;
     background-position:  50% 8rem;
-}
-#Mbridge:hover{
-    transition: 2s;
-    background-image: url(/img/castle-hover.png);
-    background-size: 65% 95% ;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 #Lbridge{
     transition: 2s;
@@ -56,6 +42,7 @@ header {
     background-position: center;
     background-origin: bottom;
 }
+        /*Bridge decor*/
 h1{ /*Hulmenaria*/
     font-size: 3rem;
     font-family: "UnifrakturMaguntia";
@@ -84,16 +71,9 @@ h5{ /*Nombres Propios*/
 }
 h6{ /**/
     margin: 0 auto;
-}
-main{
-    background-color: aqua;
-}
+}         
 Nav{
     background-color: rgb(238, 13, 43);
-}
-.tools {
-    display: flex;
-    justify-content: center;
 }
 .tools div{
     margin: 0.5rem;
@@ -103,10 +83,40 @@ Nav{
 nav img{
     width: 9rem;
 }
-            /*Navegador*/
+#butt{
+    display: none;
+}
+.tools {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    z-index: -1;
+    position: none;
+    max-height: 0;
+    opacity: 0;
+    transition: 2s ease;
+}
+#butt:checked ~ #tools{
+    z-index: 1;
+    opacity: 1;
+    max-height: 20rem;
+    transition: 2s;
+}
+#butt:checked ~ #navi-lab>#Mbridge{
+    transition: 2s;
+    background-image: url(/img/castle-hover.png);
+    background-size: 65% 95% ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+                                                /*Navegador*/
+main{
+    background-color: ;
+}
 .team{
     background-color: pink;
 }
+                                                /*Team*/
 .sts{
     background-color: rebeccapurple;
     width: 50%;
@@ -124,27 +134,35 @@ nav img{
 .list > li{
     margin: 0 0.2rem;
 }
-
-            /*Pestaña Roadmap*/
-
 #roadmap{
     display: none;
 }
 .road{
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 1s ease;
-}
-#roadmap:checked ~ #road{
-    padding: 2rem 3rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    position: relative;
+    z-index: -1;
+    max-height: 0;
+    opacity: 0;
+    transition: 2s ease;
+}
+#roadmap:checked ~ #road{
+    padding: 2rem 3rem;
+    z-index: 1;
     height: 40rem;
     opacity: 1;
     max-height: 50rem;
+    max-width: 90%;
 }
+#roadmap:checked ~ #roadmap-lab>#Mbridge{
+    transition: 2s;
+    background-image: url(/img/castle-hover.png);
+    background-size: 65% 95% ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+                                                /*Pestaña Roadmap*/
 footer{
     background-color: brown;
     display: flex;
