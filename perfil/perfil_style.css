@@ -1,10 +1,13 @@
+/* *{
+    border: none;
+}
 input, select, textarea{
     width: 100%;
+    height: 5rem;
     border:none;
+    border-left: 1px solid black;
     margin: 0;
     padding: 0;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
     text-align: center;
     background-color: none;
     font-size: 2rem;
@@ -13,26 +16,27 @@ input, select, textarea{
 input[type="date"]{
     position: relative;
     top: -0.5px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 1px solid black;
+}
+.input-2{
+    border: none;
 }
 label{
+    border: none;
     border-top: 1px solid black;
     text-align: center;
     align-items: center;
 }
-                                        /*RESET*/
+                                        /*RESET
 form p{
     font-size: 2rem;
     padding: 5px;
 }
+.text-2{
+    border-bottom: 1px solid black;
+}
 .casilla{
     display: flex;
     flex-wrap: wrap;
-}
-.casilla input, .casilla select{
-    height: 5rem;
 }
 .campo{
     display: flex;
@@ -40,8 +44,61 @@ form p{
 }
 .campo label{
     border-left: 1px solid black;
+}*/
+
+main{
+    /*width: 3840px;
+    height: 2160px;*/
+    background-image: url(/perfil/img/Fondo_ficha.png);
+    background-repeat: no-repeat;
 }
-.input{
+fieldset{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80rem;
+    max-height: 45rem;
+    font-size: 2rem;
     border: none;
-    border-top: 1px solid black;
+}
+fieldset div{
+    display: flex;    
+    width: 50%;
+}
+.identidad{
+    height: 45rem;
+}
+main label{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 8rem;
+}
+input, select{
+    background: none;
+    background-image: url();
+    border: none;
+    border: 5px double black;
+    font-size: 4rem;
+    width: 100%;
+    height: 6rem;
+    margin: 0.5rem 0.5rem;
+}
+input[type="number"]{
+    width: 6rem;
+    font-size: 2.5rem;
+}
+.row-2, .row-3{
+    width: 50%;
+}
+.row-4{
+    display: flex;
+}
+.row-2 select, .row-2 input[type="text"]{
+    font-size: 2.5rem;
+    width: 25rem;
+}
+.row-3 select, .row-4 select{
+    font-size: 1.5rem;
+    width: 8.5rem;
 }
