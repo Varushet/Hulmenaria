@@ -24,6 +24,30 @@ main label{
     width: 50%;
     height: 7.5rem;
 }
+.atr{
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(14, 1fr) 1fr 4fr;
+    align-items: center;
+    justify-content: center;
+}
+.atr label{
+    height: 4rem;
+}
+.atr label input[type="number"]{
+    font-size: 1.5rem;
+    appearance: textfield;
+    border: 1px solid black;
+    width: 3.5rem;
+    height: 3rem;
+}
+.atr p{
+    font-size: 2.8rem;
+    text-align: center;
+}
+.atr span{
+    font-size: 1.5rem;
+    text-align: center;
+}
 input, select, textarea{
     background: none;
     background-image: url();
@@ -44,6 +68,12 @@ input[type="number"]{
     width: 6rem;
     font-size: 2.5rem;
 }
+.short{     /*para encabezados cortos*/
+    padding: 2rem 1rem 0 4rem;
+}
+.row-2{
+    align-items: center;
+}
 .row-2 label{
     width: 100%;
 }
@@ -51,32 +81,41 @@ input[type="number"]{
     font-size: 2.5rem;
     width: 300%;
 }
+.row-3{
+    align-items: center;
+}
 .row-3 input[type="number"]{
     width: 100%;
     height: 6rem;
     font-size: 3rem;
 }
+.row-3 select{
+    width: 18rem;
+    font-size: 3rem;
+}
 .row-4{
+    display: flex;
+    align-items:last baseline ;
     width: 50%;
     text-align: center;
-    align-items: center;
     font-size: 1.6rem;
 }
 .row-4 p{
     font-size: 2.5rem;
 }
 .row-4 label{
-    display: inline-block;
-    height: 11rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    height: 10rem;
+    width: 25%;
 }
 .row-4 input[type="number"]{
     width: 5rem;
     appearance: none;
     -moz-appearance: textfield;
-}/*
-.row-4 select{
-    width: 25rem;
-}*/
+}
 .row-cuadrado{
     display: flex;
     flex-wrap: wrap;

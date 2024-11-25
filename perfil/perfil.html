@@ -43,78 +43,6 @@
             </div>
         </div>
     </nav>
-        <!-- 
-        <form>
-        <section class="identidad">
-            <fieldset class="casilla">
-                <label class="campo">
-                    <p>Name</p>
-                    <input type="text"></label>
-                <div class="campo">
-                <label class="campo">
-                    <p>Sign</p>
-                    <select name="">
-                        <option value="">Incarnation</option>
-                        <option value="1">Dragon</option>
-                        <option value="2">Phoe</option>
-                        <option value="3">Basilisc</option>
-                        <option value="4">Manticore</option>
-                        <option value="5">Leviatan</option>
-                        <option value="6">Unicorn</option>
-                        <option value="7">Sphinx</option>
-                        <option value="8">Hydra</option>
-                        <option value="9">Lammasu</option>
-                        <option value="10">Gryphon</option>
-                    </select></label>
-                <label class="campo">
-                    
-                </div>
-                <div class="campo">
-                <label class="campo">
-                    <p>Age</p>
-                    <input type="number" min="1"></label>
-                <label class="campo">
-                    <p>Date</p>
-                    <input type="date" name="" id="tiempo"></label>
-                </div>
-                <div class="campo">
-                <label class="campo">
-                    <p>Race</p>
-                    <textarea id="race"></textarea></label>
-                <label class="campo">
-                    <p>Mutation</p>
-                    <textarea id="race"></textarea></label>
-                </div>
-                <div class="campo">
-                    <label>
-                        <p class="text-2">Class1º</p>
-                        <input type="text" class="input-2">
-                    </label>
-                    <label>
-                        <p class="text-2">Class2º</p>
-                        <input type="text" class="input-2">
-                    </label>
-                    <label>
-                        <p class="text-2">Class3º</p>
-                        <input type="text" class="input-2">
-                    </label>
-                </div>
-                <div class="campo">
-                    <label>
-                        <input type="text" class="input-2">
-                    </label>
-                    <label>
-                        <input type="text" class="input-2">
-                    </label>
-                    <label>
-                        <input type="text" class="input-2">
-                    </label>
-                </div>
-            </fieldset>
-        </section>
-        </form>
-    -->
-
     <main>
         <form action="">
             <fieldset class="identidad">
@@ -210,42 +138,202 @@
             </fieldset>
             <fieldset class="poder">
                 <div class="row-3">
-                    <label>Lvl<input type="number" min="1" disabled></label>
+                    <label>Lvl<input type="number" min="1" readonly></label>
                     <label>E.P.<input type="number" min="1"></label>
                     <label>X.P.<input type="number" min="1"></label>
                 </div>
                 <div class="row-4">
                     <p>H.P.</p>
-                    <label>Ac<br><input type="number" min="1"></label>
-                    <label>Max<input type="number" min="1" disabled></label>
+                    <label>Ac<input type="number" min="1"></label>
+                    <label>Max<input type="number" min="1" readonly></label>
                     <p>C.P.</p>
-                    <label>Ac<br><input type="number" min="1"></label>
-                    <label>Max<input type="number" min="1" disabled></label>                    
+                    <label>Ac<input type="number" min="1"></label>
+                    <label>Max<input type="number" min="1" readonly></label>                    
+                </div>
+                <div class="row-3">
+                    <label><select id="">
+                        <option value="">Mistyc</option>
+                        <option value="1">Favilyan</option>
+                        <option value="2">Cromag</option>
+                        <option value="3">Novalt</option></select></label>
+                    <label>Ac<input type="number" min="5"></label>
+                    <label>Max<input type="number" min="5" readonly></label>
+                </div>
+                <div class="row-3">
+                    <label><select id="">
+                        <option value="">Insiders</option>
+                        <option value="1">Polarity</option>
+                        <option value="2">Geruma</option>
+                        <option value="3">Sentiment</option></select></label>
+                    <label>Ac<input type="number" min="5"></label>
+                    <label>Max<input type="number" min="5" readonly></label>
+                </div>
+                <div class="row-3">
+                    <label><select id="">
+                        <option value="">Naturals</option>
+                        <option value="1">Elements</option>
+                        <option value="2">Exaner</option>
+                        <option value="3">Mana</option></select></label>
+                    <label>Ac<input type="number" min="5"></label>
+                    <label>Max<input type="number" min="5" readonly></label>
                 </div>
                 <div class="row-4">
-                    <label><p>N.A.</p><input type="number" min="1" disabled></label>
-                    <label><p>Arm</p><input type="number" min="1" disabled></label>
-                    <p>&nbsp p &nbsp</p>
-                    <label>Ac<br><input type="number" min="1"></label>
-                    <label>&nbspMax&nbsp<input type="number" min="1" disabled></label>                    
+                    &nbsp;&nbsp;&#8195;&#8195;<label><p>N.A.</p><input type="number" min="1" readonly></label>
+                    <label><p>Arm</p><input type="number" min="1" readonly></label>
+                    <p class="short">p</p>
+                    <label>Ac<input type="number" min="1"></label>
+                    <label>Max<input type="number" min="1" readonly></label>                    
                 </div>
                 <div class="row-4">
                     <p>Res</p>
-                    <label>Ac<br><input type="number" min="5"></label>
-                    <label>Max<input type="number" min="5" disabled></label>
+                    <label>Ac<input type="number" min="5"></label>
+                    <label>Max<input type="number" min="5" readonly></label>
                     <p>Ham</p>
-                    <label>Ac<br><input type="number" min="1"></label>
-                    <label>Max<input type="number" min="1" disabled></label>                    
+                    <label>Ac<input type="number" min="1"></label>
+                    <label>Max<input type="number" min="1" readonly></label>                    
                 </div>
                 <div class="row-4">
-                    <label><select id="">
-                        <option value="">Mistyc</option>
-                        <option value="1"></option>
-                        <option value="2"></option>
-                        <option value="3"></option>
-                    </select></label>
-                    <label>Ac<br><input type="number" min="5"></label>
-                    <label>Max<input type="number" min="5" disabled></label>
+                    <p>Cor</p>
+                    <label>%<input type="number" min="0" ></label>
+                    <label>-/d<input type="number" readonly></label>
+                    <p>Mad</p>
+                    <label>%<input type="number" min="0"></label>
+                    <label>-/d<input type="number" readonly></label>                    
+                </div>
+                <div class="row-2">
+                    Karma
+                    <label><input type="number" onkeypress="return false" min="0">Good</label>
+                    <label><input type="number" onkeypress="return false"  min="0">Evil</label></div>
+            </fieldset>
+            <fieldset class="atr">
+                    <p>Cons</p>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <p>Int</p>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <p>Per</p>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <p>Car</p>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Agil</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Clev</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Emp</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Pret</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>End</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Con</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Seek</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Mani</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Strg</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Ingi</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Dizz</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Sec</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Rap</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Wisd</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Sigh</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Sec</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Ref</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Tem</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <p>Hab</p>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <p>Psi</p>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Spd</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Will</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Art</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <p>Esp</p>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <p>Ill</p>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">G<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <span>Des</span>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for="">/<input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <p>Luck</p>
+                    <label for=""><input type="number" name="" id=""></label>
+                    <label for=""><input type="number" name="" id=""></label>
+ 
                 </div>
             </fieldset>
         </form>
