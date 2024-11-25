@@ -13,7 +13,7 @@
 
 </style>
 <body>
-    <!-- <header>
+    <header>
         <h1>Hulmenaria</h1>
         <div class="logo">
            <a href="/index.html"><img src="/img/Logo.png" alt="Logo"></a>
@@ -42,7 +42,7 @@
                 <a href="/map/map-index.html"><img src="/img/mapa.png" alt="Map icon"></a>
             </div>
         </div>
-    </nav>  -->
+    </nav>
         <!-- 
         <form>
         <section class="identidad">
@@ -113,48 +113,17 @@
             </fieldset>
         </section>
         </form>
-         -->
+    -->
 
     <main>
         <form action="">
             <fieldset class="identidad">
                 <label>Name<input type="text"></label>
-                <div class="row-2">
-                <label>Sign<select name="">
-                    <option value="">Incarnation</option>
-                    <option value="1">Dragon</option>
-                    <option value="2">Phoe</option>
-                    <option value="3">Basilisc</option>
-                    <option value="4">Manticore</option>
-                    <option value="5">Leviatan</option>
-                    <option value="6">Unicorn</option>
-                    <option value="7">Sphinx</option>
-                    <option value="8">Hydra</option>
-                    <option value="9">Lammasu</option>
-                    <option value="10">Gryphon</option></select></label>
-                <label><select name="">
-                    <option value="">Constelation</option>
-                    <option value="1">Labrator</option>
-                    <option value="2">Artisan</option>
-                    <option value="3">Alchemist</option>
-                    <option value="4">Glutton</option>
-                    <option value="5">Satyr</option>
-                    <option value="6">Dilettante</option>
-                    <option value="7">Foreign</option>
-                    <option value="8">Warrior</option>
-                    <option value="9">King</option>
-                    <option value="10">Usurer</option>
-                    <option value="11">Merchant</option>
-                    <option value="12">Guardian</option>
-                    <option value="13">Betrayer</option>
-                    <option value="14">Fool</option>
-                    <option value="15">Hypocrite</option>
-                    <option value="16">Healer</option>
-                    <option value="17">Soothsayer</option>
-                    <option value="18">Priest</option></select></label>
-                </div>
-                <div class="row-4">
-                    <label>Alignment<select>
+                <label>Race<input type="text"></label>
+                <label>Mutation<textarea></textarea></label>
+                <div class="row-cuadrado">
+                    <p>Alignment</p>
+                    <label><select>
                         <option value="">Temper</option>
                         <option value="1">Altruist</option>
                         <option value="2">Lawful</option>
@@ -167,22 +136,65 @@
                         <option value="2">Hypocrite</option>
                         <option value="3">Agressive</option></select></label>
                     <label><select>
-                        <option value="">Attitude</option>
-                        <option value="1">Gentle</option>
-                        <option value="2">Hypocrite</option>
-                        <option value="3">Agressive</option></select></label>
+                        <option value="">Faction</option>
+                        <option value="1">Imperial</option>
+                        <option value="2">Sylvan</option>
+                        <option value="2">Hermit</option>
+                        <option value="2">Sleeper</option>
+                        <option value="2">Nomad</option>
+                        <option value="2">Refugee</option>
+                        <option value="2">Outlaw</option>
+                        <option value="2">Noctil</option>
+                        <option value="2">Cultist</option>
+                        <option value="3">Ravager</option></select></label>
                     <label><select>
-                        <option value="">Attitude</option>
-                        <option value="1">Gentle</option>
-                        <option value="2">Hypocrite</option>
-                        <option value="3">Agressive</option></select></label>
+                        <option value="">Function</option>
+                        <option value="1">Guardian</option>
+                        <option value="2">Stalker</option>
+                        <option value="2">Worker</option>
+                        <option value="2">Trader</option>
+                        <option value="2">Explorer</option>
+                        <option value="2">Hoarder</option>
+                        <option value="2">Researcher</option>
+                        <option value="2">Emissary</option></select></label>
                 </div>
-                    <label>Race<input type="text"></label>
-                    <label>Mutation<input type="text"></label>
                 <div class="row-2">
-                    <label>Age<input type="number" min="1"></label>
-                    <label>Title<input type="text"></label>
-                </div>
+                    <label>Age<input type="number" min="1">
+                        <label>Title<input type="text"></label></label>
+                </div> <div class="row-2">
+                    <label>Sign<select name="">
+                        <option value="">Incarnation</option>
+                        <option value="1">Dragon</option>
+                        <option value="2">Phoe</option>
+                        <option value="3">Basilisc</option>
+                        <option value="4">Manticore</option>
+                        <option value="5">Leviatan</option>
+                        <option value="6">Unicorn</option>
+                        <option value="7">Sphinx</option>
+                        <option value="8">Hydra</option>
+                        <option value="9">Lammasu</option>
+                        <option value="10">Gryphon</option></select></label>
+                    <label><select name="">
+                        <option value="">Constelation</option>
+                        <option value="1">Labrator</option>
+                        <option value="2">Artisan</option>
+                        <option value="3">Alchemist</option>
+                        <option value="4">Glutton</option>
+                        <option value="5">Satyr</option>
+                        <option value="6">Dilettante</option>
+                        <option value="7">Foreign</option>
+                        <option value="8">Warrior</option>
+                        <option value="9">King</option>
+                        <option value="10">Usurer</option>
+                        <option value="11">Merchant</option>
+                        <option value="12">Guardian</option>
+                        <option value="13">Betrayer</option>
+                        <option value="14">Fool</option>
+                        <option value="15">Hypocrite</option>
+                        <option value="16">Healer</option>
+                        <option value="17">Soothsayer</option>
+                        <option value="18">Priest</option></select></label>
+                    </div>
                 <div class="row-2">
                     <label>Class1<label><input type="number"></label>
                         <input type="text"></label></div>
@@ -193,8 +205,48 @@
                 <div class="row-2">
                     <label>Class3<label><input type="number"></label>
                         <input type="text"></label>
-                         </div>
+                </div>
                     <label>Synergy<input type="text"></label>    
+            </fieldset>
+            <fieldset class="poder">
+                <div class="row-3">
+                    <label>Lvl<input type="number" min="1" disabled></label>
+                    <label>E.P.<input type="number" min="1"></label>
+                    <label>X.P.<input type="number" min="1"></label>
+                </div>
+                <div class="row-4">
+                    <p>H.P.</p>
+                    <label>Ac<br><input type="number" min="1"></label>
+                    <label>Max<input type="number" min="1" disabled></label>
+                    <p>C.P.</p>
+                    <label>Ac<br><input type="number" min="1"></label>
+                    <label>Max<input type="number" min="1" disabled></label>                    
+                </div>
+                <div class="row-4">
+                    <label><p>N.A.</p><input type="number" min="1" disabled></label>
+                    <label><p>Arm</p><input type="number" min="1" disabled></label>
+                    <p>&nbsp p &nbsp</p>
+                    <label>Ac<br><input type="number" min="1"></label>
+                    <label>&nbspMax&nbsp<input type="number" min="1" disabled></label>                    
+                </div>
+                <div class="row-4">
+                    <p>Res</p>
+                    <label>Ac<br><input type="number" min="5"></label>
+                    <label>Max<input type="number" min="5" disabled></label>
+                    <p>Ham</p>
+                    <label>Ac<br><input type="number" min="1"></label>
+                    <label>Max<input type="number" min="1" disabled></label>                    
+                </div>
+                <div class="row-4">
+                    <label><select id="">
+                        <option value="">Mistyc</option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                    </select></label>
+                    <label>Ac<br><input type="number" min="5"></label>
+                    <label>Max<input type="number" min="5" disabled></label>
+                </div>
             </fieldset>
         </form>
 

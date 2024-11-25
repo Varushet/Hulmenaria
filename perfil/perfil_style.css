@@ -1,56 +1,8 @@
-/* *{
-    border: none;
-}
-input, select, textarea{
-    width: 100%;
-    height: 5rem;
-    border:none;
-    border-left: 1px solid black;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: none;
-    font-size: 2rem;
-    resize: none;
-}
-input[type="date"]{
-    position: relative;
-    top: -0.5px;
-}
-.input-2{
-    border: none;
-}
-label{
-    border: none;
-    border-top: 1px solid black;
-    text-align: center;
-    align-items: center;
-}
-                                        /*RESET
-form p{
-    font-size: 2rem;
-    padding: 5px;
-}
-.text-2{
-    border-bottom: 1px solid black;
-}
-.casilla{
-    display: flex;
-    flex-wrap: wrap;
-}
-.campo{
-    display: flex;
-    width: 100%;
-}
-.campo label{
-    border-left: 1px solid black;
-}*/
-
 main{
-    /*width: 3840px;
-    height: 2160px;*/
+    position: absolute;
     background-image: url(/perfil/img/Fondo_ficha.png);
     background-repeat: no-repeat;
+    background-size:cover ;
 }
 fieldset{
     display: flex;
@@ -59,22 +11,20 @@ fieldset{
     width: 80rem;
     max-height: 45rem;
     font-size: 2rem;
-    border: none;
+    border: 1px solid black;
+    margin: 1rem;
 }
 fieldset div{
     display: flex;    
     width: 50%;
 }
-.identidad{
-    height: 45rem;
-}
 main label{
     display: flex;
     align-items: center;
     width: 50%;
-    height: 8rem;
+    height: 7.5rem;
 }
-input, select{
+input, select, textarea{
     background: none;
     background-image: url();
     border: none;
@@ -83,22 +33,59 @@ input, select{
     width: 100%;
     height: 6rem;
     margin: 0.5rem 0.5rem;
+    resize: none;
+    text-align: center;
+}
+textarea{
+    font-size: 1.65rem;
+    text-align: left;
 }
 input[type="number"]{
     width: 6rem;
     font-size: 2.5rem;
 }
-.row-2, .row-3{
-    width: 50%;
-}
-.row-4{
-    display: flex;
+.row-2 label{
+    width: 100%;
 }
 .row-2 select, .row-2 input[type="text"]{
     font-size: 2.5rem;
-    width: 25rem;
+    width: 300%;
 }
-.row-3 select, .row-4 select{
-    font-size: 1.5rem;
-    width: 8.5rem;
+.row-3 input[type="number"]{
+    width: 100%;
+    height: 6rem;
+    font-size: 3rem;
+}
+.row-4{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.row-4 p{
+    font-size: 2.5rem;
+}
+.row-4 label{
+    display: inline-block;
+    height: 11rem;
+}
+.row-4 input[type="number"]{
+    width: 5rem;
+    appearance: none;
+    -moz-appearance: textfield;
+}/*
+.row-4 select{
+    width: 25rem;
+}*/
+.row-cuadrado{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-cuadrado select{
+    font-size: 2rem;
+    width: 100%;
+}
+.row-cuadrado p{
+    width: 100%;
+    text-align: center;
 }
