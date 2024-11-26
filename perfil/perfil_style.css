@@ -9,7 +9,7 @@ fieldset{
     flex-direction: column;
     flex-wrap: wrap;
     width: 80rem;
-    max-height: 45rem;
+    height: 45rem;
     font-size: 2rem;
     border: 1px solid black;
     margin: 1rem;
@@ -23,30 +23,6 @@ main label{
     align-items: center;
     width: 50%;
     height: 7.5rem;
-}
-.atr{
-    display: grid;
-    grid-template: repeat(8, 1fr) / repeat(14, 1fr) 1fr 4fr;
-    align-items: center;
-    justify-content: center;
-}
-.atr label{
-    height: 4rem;
-}
-.atr label input[type="number"]{
-    font-size: 1.5rem;
-    appearance: textfield;
-    border: 1px solid black;
-    width: 3.5rem;
-    height: 3rem;
-}
-.atr p{
-    font-size: 2.8rem;
-    text-align: center;
-}
-.atr span{
-    font-size: 1.5rem;
-    text-align: center;
 }
 input, select, textarea{
     background: none;
@@ -68,6 +44,9 @@ input[type="number"]{
     width: 6rem;
     font-size: 2.5rem;
 }
+input[type="range"]{
+    width: 22rem;
+}
 .short{     /*para encabezados cortos*/
     padding: 2rem 1rem 0 4rem;
 }
@@ -82,6 +61,7 @@ input[type="number"]{
     width: 300%;
 }
 .row-3{
+    margin-top: 0.9rem;
     align-items: center;
 }
 .row-3 input[type="number"]{
@@ -127,4 +107,92 @@ input[type="number"]{
 .row-cuadrado p{
     width: 100%;
     text-align: center;
+}
+.karma{
+    display: unset;
+    text-align: center;
+}
+.karma label{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 4rem;
+}
+.karma input[type="range"]{
+    border: none;
+    width: 22rem;
+}
+.karma input[type="range"]::-moz-range-track {
+    background: linear-gradient(to right, #4caf50, #f44336);
+    height: 2rem;
+}
+.atr{
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(16, 1fr);
+    align-items: center;
+    justify-content: center;
+    max-height: 45REM;
+}
+.atr label{
+    height: 4rem;
+}
+.atr label input, .atr select{
+    font-size: 1.5rem;
+    appearance: textfield;
+    border: 1px solid black;
+    width: 3.5rem;
+    height: 3rem;
+}
+.atr p{
+    font-size: 2.8rem;
+    text-align: center;
+}
+.atr span{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.atr select{
+    width: 8.6rem;
+}
+.atr input[type="range"]::-moz-range-track {
+    background: linear-gradient(to right, #4caf50, #f44336);
+    height: 100%;
+}
+#cap{
+    width: 2rem;
+}
+.luk{
+    grid-column: 15/17;
+    width: 10rem;
+}
+.herida{
+    grid-column: 3 / 5;
+    width: 8rem;
+}
+label[class*="herida-"]{
+    width: 10rem;
+}
+.herida-2{
+    grid-column: 5 / 9;
+}
+.herida-3{
+    grid-column: 1/3
+}
+.herida-4{
+    grid-column: 5/9;
+}
+.herida-5{
+    grid-column: 10/14;
+}
+.herida-6{
+    grid-column: 14/16;
+}
+.herida-7{
+    grid-column: 10/14;
+}
+.herida-8{
+    grid-column: 14/16;
+}
+label[class*="herida"] input[type="text"]{
+    width: 16rem;
 }
