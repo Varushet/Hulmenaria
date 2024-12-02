@@ -76,10 +76,14 @@ dialog input{
 }
 dialog input[type="number"]{
     width: 100%;
+    font-size: 2rem;
+    appearance: none;
+    -moz-appearance: textfield;
 }
 .short{     /*para encabezados cortos*/
     padding: 2rem 1rem 0 4rem;
 }
+                                        /* Poder e Identidad fieldset */
 .row-2{
     align-items: center;
 }
@@ -138,7 +142,7 @@ dialog input[type="number"]{
     width: 100%;
     text-align: center;
 }
-                                        /* Poder e Identidad fieldset */
+                                                /* Atributos fieldset */
 .karma{
     display: flex;
     align-items: center;
@@ -234,7 +238,6 @@ label[class*="herida-"]{
 label[class*="herida"] input[type="text"]{
     width: 16rem;
 }
-                                                /* Atributos fieldset */
 .equipo{
     width: 80rem;
     height: 80rem;
@@ -259,24 +262,37 @@ label[class*="herida"] input[type="text"]{
     border: dotted;
     font-size: 30px;
 }
-.equipo button{
-    background: transparent;
-    border: none;
-    background-image: url(/perfil/img/pieza.png);
-    background-size: cover;
-}
-.equipo button:hover img{
-    opacity: 1;
-}
+                            /*Tipos de botones*/
+
 .equipo button img{
-    height: 10rem;
     width: 10rem;
+    height: 10rem;
     opacity: 0;
     transition: 0.5s;
 }
-.equipo button .abalorio{
+.equipo button{
+    background: transparent;
+    background-color: rgba(150, 80, 22, 0.405);
+    border: none;
+    border-radius: 2rem;
+    background-image: url(/perfil/img/pieza.png);
+    background-size: cover;
+    aspect-ratio: 1/1;
+}
+.largo, aside .largo img{
+    height: 15rem;
+    width: 8rem;
+}
+.corto, aside .corto img{
+    height: 3rem;
+    width: 8rem;
+}
+.abalorio, aside .abalorio img{
     height: 4rem;
     width: 4rem;
+}
+.equipo button:hover img{
+    opacity: 1;
 }
 aside[class*="casilla"]{
     position: absolute;
@@ -285,18 +301,37 @@ aside[class*="casilla"]{
 .casilla-torso{top: 30rem; left: 35rem;}
 .casilla-cintura{top: 42rem; left: 35rem;}
 .casilla-hombro-izq{top: 18rem; left: 22rem;}
-.casilla-hombro-dch{top: 18rem; left: 47rem;}
+.casilla-hombro-dch{top: 18rem; right: 22rem;}
 .casilla-brazo-izq{top: 30rem; left: 20rem;}
 .casilla-brazo-dch{top: 30rem; left: 50rem;}
 .casilla-mano-izq{top: 42rem; left: 20rem;}
 .casilla-mano-dch{top: 42rem; left: 50rem;}
-.casilla-pierna-izq{top: 56rem; left: 25rem;}
-.casilla-pierna-dch{top: 56rem; left: 45rem;}
-.casilla-pie-izq{top: 68rem; left: 25rem;}
-.casilla-pie-dch{top: 68rem; left: 45rem;}
+.casilla-pierna-izq{top: 56rem; left: 29rem;}
+.casilla-pierna-dch{top: 56rem; left: 41rem;}
+.casilla-pie-izq{top: 68rem; left: 29rem;}
+.casilla-pie-dch{top: 68rem; left: 41rem;}
 
+.casilla-pircing-izq{top: 5rem; left: 31rem;}
+.casilla-pircing-dch{top: 5rem; left: 45rem;}
+.casilla-cara{top: 15rem; left: 45rem;}
+.casilla-collar{top: 15rem; left: 31rem;}
+.casilla-tatoo{top: 28rem; left: 30.5rem;}
+.casilla-kenwa{top: 28rem; left: 45.5rem;}
+.casilla-pulsera-izq{top: 39rem; left: 30.5rem;}
+.casilla-pulsera-dch{top: 39rem; left: 45.5rem;}
+.casilla-anillo-izq{top: 50rem; left: 30.5rem;}
+.casilla-anillo-dch{top: 50rem; left: 45.5rem;}
 
-.casilla-cara{top: 15rem; left: 44rem;}
+.casilla-arma{bottom: 1rem; left: 1rem;}
+.casilla-escudo{bottom: 1rem; left: 20rem;}
+.casilla-vaina{bottom: 17rem; left: 1rem;}
+.casilla-magic{bottom: 1rem; right: 20rem;}
+.casilla-range{bottom: 1rem; right: 1rem;}
+.casilla-carcaj{bottom: 17rem; right: 1rem;}
+
+.casilla-arma button {background-image: url(/perfil/img/pieza.png);}
+.casilla-escudo button{background-image: url(/perfil/img/pieza.png);}
+.casilla-vaina button{background-image: url(/perfil/img/pieza.png);}
 
 .casilla-nombre{
     width: 95%;
