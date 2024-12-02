@@ -1,64 +1,70 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barra de Progreso con Checkbox Desactivados</title>
-  <style>
-    /* Estilos para la barra de progreso */
-    .progress-bar {
-      width: 100%;
-      background-color: #e0e0e0;
-      border-radius: 5px;
-      margin: 20px 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog con Cierre Externo</title>
+    <style>
+        dialog {
+            padding: 20px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-    .progress {
-      height: 20px;
-      width: 0;
-      background-color: #4caf50;
-      border-radius: 5px;
-      transition: width 0.3s;
-    }
-  </style>
+        dialog::backdrop {
+            background: rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
+    <button id="openDialog">Abrir Diálogo</button>
 
-  <h1>Barra de Progreso con Checkbox Desactivados</h1>
+    <dialog>
+        <p>Este es un 1.</p>
+        <button id="closeDialog">Cerrar</button>
+    </dialog>
+    
+    <button id="openDialog">Abrir Diálogo</button>
+    <dialog>
+      <p>Este es un 2.</p>
+      <button id="closeDialog">Cerrar</button>
+  </dialog>
 
-  <!-- Barra de progreso -->
-  <div class="progress-bar">
-    <div class="progress" id="progress"></div>
-  </div>
+  <button id="openDialog">Abrir Diálogo</button>
+  <dialog>
+    <p>Este es un 3.</p>
+    <button id="closeDialog">Cerrar</button>
+</dialog>
 
-  <!-- Lista de checkboxes desactivados -->
-  <div id="checkboxes">
-    <label><input type="checkbox" disabled onchange="updateProgress()"> Tarea 1</label><br>
-    <label><input type="checkbox" onchange="updateProgress()"> Tarea 2</label><br>
-    <label><input type="checkbox" disabled onchange="updateProgress()"> Tarea 3</label><br>
-    <label><input type="checkbox" disabled onchange="updateProgress()"> Tarea 4</label><br>
-    <label><input type="checkbox" disabled onchange="updateProgress()"> Tarea 5</label><br>
-  </div>
+    <script>
+        const dialog = document.querySelector('dialog');
+        const openButton = document.getElementById('openDialog');
+        const closeButton = document.getElementById('closeDialog');
 
-  <script>
-    // Función para actualizar la barra de progreso
-    function updateProgress() {
-      const checkboxes = document.querySelectorAll('#checkboxes input[type="checkbox"]');
-      const checkedCount = document.querySelectorAll('#checkboxes input[type="checkbox"]:checked').length;
-      const total = checkboxes.length;
-      const percentage = (checkedCount / total) * 100;
+        // Abrir el diálogo
+        openButton.addEventListener('click', () => {
+            dialog.showModal();
+        });
 
-      // Actualizar el ancho de la barra de progreso
-      document.getElementById('progress').style.width = percentage + '%';
-    }
+        // Cerrar el diálogo al hacer clic en el botón de cerrar
+        closeButton.addEventListener('click', () => {
+            dialog.close();
+        });
 
-    // Simulación de selección de checkboxes desde el código
-    document.querySelectorAll('#checkboxes input[type="checkbox"]')[0].checked = true;
+        // Cerrar el diálogo al hacer clic fuera de él
+        dialog.addEventListener('click', (event) => {
+            const dialogRect = dialog.getBoundingClientRect();
+            const clickedOutside =
+                event.clientX < dialogRect.left ||
+                event.clientX > dialogRect.right ||
+                event.clientY < dialogRect.top ||
+                event.clientY > dialogRect.bottom;
 
-    document.querySelectorAll('#checkboxes input[type="checkbox"]')[1].checked = true;
-    document.querySelectorAll('#checkboxes input[type="checkbox"]')[2].checked = true;
-    updateProgress(); // Actualizar la barra de progreso tras la selección
-  </script>
-
+            if (clickedOutside) {
+                dialog.close();
+            }
+        });
+    </script>
 </body>
 </html>
