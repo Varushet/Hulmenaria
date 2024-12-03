@@ -1,8 +1,17 @@
 main{
-    
+    margin-top: 0;
+    padding: 0;
+    overflow: scroll;
+}
+form{
     background-image: url(/perfil/img/Fondo_ficha.png);
     background-repeat: no-repeat;
-    background-size:cover ;
+    background-size:cover;
+    width: 3840px;
+    height: 2160px;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 fieldset{
     display: flex;
@@ -12,7 +21,32 @@ fieldset{
     height: 45rem;
     font-size: 2rem;
     border: 1px solid black;
-    margin: 1rem;
+}
+.equipo{
+    height: 80rem;
+    background-image: url(/img/fondo_charcter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 8rem;
+    left: 8rem;
+}
+.atr{
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(16, 1fr);
+    align-items: center;
+    justify-content: center;
+    max-height: 45rem;
+    position: absolute;
+}
+.identidad{
+    position: absolute;
+    top: 8rem;
+    left: 33%;
+}
+.poder{
+    position: absolute;
+
 }
 fieldset div{
     display: flex;    
@@ -175,13 +209,6 @@ input[type="range"]::-moz-range-thumb {
     background-size:cover ;
     border: none;
 }
-.atr{
-    display: grid;
-    grid-template: repeat(8, 1fr) / repeat(16, 1fr);
-    align-items: center;
-    justify-content: center;
-    max-height: 45REM;
-}
 .atr label{
     height: 4rem;
 }
@@ -237,14 +264,6 @@ label[class*="herida-"]{
 
 label[class*="herida"] input[type="text"]{
     width: 16rem;
-}
-.equipo{
-    width: 80rem;
-    height: 80rem;
-    background-image: url(/img/fondo_charcter.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 .faltr{
     display: flex;
