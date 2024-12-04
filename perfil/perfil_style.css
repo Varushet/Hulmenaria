@@ -4,7 +4,7 @@ main{
     overflow: scroll;
 }
 form{
-    background-image: url(/perfil/img/Fondo_ficha.png);
+    background-image: url(/img/Fondo_pergamino.png);
     background-repeat: no-repeat;
     background-size:cover;
     width: 3840px;
@@ -20,7 +20,6 @@ fieldset{
     width: 80rem;
     height: 45rem;
     font-size: 2rem;
-    border: 1px solid black;
 }
 .equipo{
     height: 80rem;
@@ -28,8 +27,8 @@ fieldset{
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    bottom: 8rem;
-    left: 8rem;
+    bottom: 2rem;
+    left: 10rem;
 }
 .atr{
     display: grid;
@@ -38,14 +37,18 @@ fieldset{
     justify-content: center;
     max-height: 45rem;
     position: absolute;
+    bottom: 10rem;
+    right: 10rem;
 }
 .identidad{
     position: absolute;
-    top: 8rem;
-    left: 33%;
+    top: 5rem;
+    left: 10rem;
 }
 .poder{
     position: absolute;
+    top: 10rem;
+    right: 10rem;
 
 }
 fieldset div{
