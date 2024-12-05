@@ -1,24 +1,45 @@
 main{
+    display: flex;
+}
+aside{
+    position: fixed;
+    z-index: 10;
+    padding: 1rem;
+    width: 10%;
+    height: 120vh;
+    background-color: rgb(56, 216, 170);
+}
+aside ul li{
+    margin: 1rem;
+    list-style:unset ;
+}
+aside h5{
+    text-align: center;
+}
+aside div{
+    position:absolute;
+    overflow: scroll;
+    top: 0;
+}
+.fondo{
+    position: absolute;
     overflow: scroll;
     position: relative;
     width: 100%;
-    height: 150rem;
-}
-.fondo{  
-    background-image: url(/img/Fondo_pergamino.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: absolute;
 }
 section{
-    margin: 5rem;
+    width: 285rem;
+    background-image: url(/img/Fondo_pergamino.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 5rem 5rem 5rem 13rem;
 }
 article{
     width: 115rem;
     height: 48rem;
     position: absolute;
     top: 85em;
-    left: 25rem;
+    left: 33rem;
     clip-path: polygon(100% 0%, 100% 10%, 32% 100%, 0% 100%, 10% 0%);
     background-color: rgba(0, 128, 0, 0.3);
 }
@@ -32,6 +53,15 @@ button{
 }
 .civil{
     height: 160rem;
+}
+#civil{
+    width: 70rem;
+    height: 45rem;
+    position: absolute;
+    top: 62.5rem;
+    left: 123rem;
+    z-index: -1;
+    background-color: rgba(109, 55, 163, 0.324);
 }
 #combateCC{top: 3.2rem; left: 94.7rem;}
 #armasHoja{top: 11rem; left: 71.5rem;}
