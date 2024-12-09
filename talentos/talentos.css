@@ -2,44 +2,49 @@ main{
     display: flex;
 }
 aside{
-    position: fixed;
+    position:relative;
+    overflow: scroll;
     z-index: 10;
-    padding: 1rem;
+    padding: 0rem 0 0 1rem ;
     width: 10%;
-    height: 120vh;
+    height: 100vh;
     background-color: rgb(56, 216, 170);
+}
+aside div{
+    overflow: scroll;
+    top: 0;
 }
 aside ul li{
     margin: 1rem;
-    list-style:unset ;
+    list-style:unset;
 }
 aside h5{
     text-align: center;
 }
-aside div{
-    position:absolute;
-    overflow: scroll;
-    top: 0;
-}
+
 .fondo{
     position: absolute;
     overflow: scroll;
     position: relative;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 section{
     width: 285rem;
     background-image: url(/img/Fondo_pergamino.png);
     background-repeat: no-repeat;
     background-size: contain;
-    padding: 5rem 5rem 5rem 13rem;
+    padding: 8rem 14rem;
+}
+.civil{
+    height: 160rem;
 }
 article{
     width: 115rem;
     height: 48rem;
     position: absolute;
-    top: 85em;
-    left: 33rem;
+    top: 88em;
+    left: 34rem;
     clip-path: polygon(100% 0%, 100% 10%, 32% 100%, 0% 100%, 10% 0%);
     background-color: rgba(0, 128, 0, 0.3);
 }
@@ -51,17 +56,45 @@ button{
     border-radius: 4rem;
     background-color: rgba(128, 128, 128, 0.541) ;
 }
-.civil{
-    height: 160rem;
-}
 #civil{
     width: 70rem;
     height: 45rem;
     position: absolute;
-    top: 62.5rem;
+    top: 66rem;
     left: 123rem;
     z-index: -1;
-    background-color: rgba(109, 55, 163, 0.324);
+}
+#soldado{
+    width: 70rem;
+    height: 45rem;
+    position: absolute;
+    top: 66rem;
+    left: 12rem;
+    z-index: -1;
+}
+#mago{
+    width: 70rem;
+    height: 45rem;
+    position: absolute;
+    top: 0rem;
+    left: 123rem;
+    z-index: -1;
+}
+#psionico{
+    width: 70rem;
+    height: 45rem;
+    position: absolute;
+    top: 66rem;
+    left: 232rem;
+    z-index: -1;
+}
+#animista{
+    width: 70rem;
+    height: 45rem;
+    position: absolute;
+    top: 130rem;
+    left: 123rem;
+    z-index: -1;
 }
 #combateCC{top: 3.2rem; left: 94.7rem;}
 #armasHoja{top: 11rem; left: 71.5rem;}
