@@ -7,8 +7,8 @@ form{
     background-image: url(/img/Fondo_pergamino.png);
     background-repeat: no-repeat;
     background-size:cover;
-    width: 3840px;
-    height: 2160px;
+    width: 4224px;
+    height: 2376px;
     margin: 0;
     padding: 0;
     position: relative;
@@ -27,8 +27,9 @@ fieldset{
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    bottom: 2rem;
-    left: 10rem;
+    transform: translateX(-50%);
+    top: 25rem;
+    left: 50%;
 }
 .atr{
     display: grid;
@@ -37,18 +38,18 @@ fieldset{
     justify-content: center;
     max-height: 45rem;
     position: absolute;
-    bottom: 10rem;
-    right: 10rem;
+    bottom: 25rem;
+    right: 5rem;
 }
 .identidad{
     position: absolute;
-    top: 5rem;
-    left: 10rem;
+    top: 25rem;
+    left: 5rem;
 }
 .poder{
     position: absolute;
-    top: 10rem;
-    right: 10rem;
+    top: 25rem;
+    right: 5rem;
 
 }
 fieldset div{
