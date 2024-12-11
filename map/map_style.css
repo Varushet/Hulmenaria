@@ -1,47 +1,64 @@
-section label{
-    font-size: 2rem;
+main img{
+    display: ;
+    width: 100%;
 }
-section div{
-    overflow: scroll;
+.atlas{
+    display: flex;
 }
-section input{
-    display: none;
+.mapas{
+    background-color: aqua;
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
 }
-#argoll{
-    display: none;
-    border: 4px double red;    
+.mapas>button{
+    width: 8rem;
+    height: 5rem;
+    margin: 2rem;
 }
-.cuarentena{
-    border: 4px double red;
-}
-#argoll-butt:checked ~ #argoll{
-    display: block;
-}
-#argoll-butt:checked ~ #argoll-lab>#Sbridge{
-    transition: 2s;
-    background-image: url(/img/Scastle-hover.png);
-    background-size: 75% 95%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#cuarentena-butt:not(:checked) ~ #cuarentena{
-    display: none;
-}
-#cuarentena-butt:checked ~ #cuarentena-lab>#Mbridge{
-    transition: 2s;
-    background-image: url(/img/castle-hover.png);
-    background-size: 65% 95% ;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.layers{
+.botonera-maps{
+    width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 1rem;
+    justify-content: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: salmon;
 }
-section{
+.botonera-maps button{
+    min-width: 12rem;
+    height: 5rem;
+    margin: 2rem;
+    border: none;
+    background: transparent;
+    background-color: blue;
+    transition: 0.5s;
+}
+.botonera-maps button:hover{
+    min-width: 16rem;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+aside{
+    position: relative;
+    width: 20%;
+    height: 100vh;
+    padding: 0 0 0 0.5rem;
+    background-color: darkgoldenrod;
+}
+.marco{
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 100vh;
+    overflow: scroll;
+    border: 2rem solid black
+}
+.marco div{
+    position: absolute;
     display: flex;
-    max-width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 2rem;
+    height: 8rem;
+    background-color: rgba(165, 42, 42, 0.193);
 }

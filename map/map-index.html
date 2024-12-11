@@ -18,46 +18,57 @@
 
     </header>
     <nav>
-        <nav>
-            <input type="checkbox" id="butt">
-            <label for="butt" id="navi-lab"><h4 id="Mbridge">RPG Tools</h4></label>
-            <div class="tools" id="tools">
-                <div>
-                    <h3>PJ Sheet</h3>
-                    <a href="/perfil/perfil.html"><img src="/img/ficha.png" alt="Character sheet"></a>
-                </div>
-                <div>
-                    <h3>Loot Table</h3>
-                    <a href="#"><img src="/img/cofre.png" alt="Loot icon"></a>
-                </div>
-                <div>
-                    <h3>Encyclopedia</h3>
-                    <a href="#"><img src="/img/enciclopedia.png" alt="Encyclopedia icon"></a>
-                </div>
-                <div>
-                    <h3>Map</h3>
-                    <a href="/map/map-index.html"><img src="/img/mapa.png" alt="Map icon"></a>
-                </div>
+        <input type="checkbox" id="butt">
+        <label for="butt" id="navi-lab"><h4 id="Mbridge">RPG Tools</h4></label>
+        <div class="tools" id="tools">
+            <div>
+                <h3>PJ Sheet</h3>
+                <a href="/perfil/perfil.html"><img src="/img/ficha.png" alt="Character sheet"></a>
             </div>
-        </nav>
+            <div>
+                <h3>Talents</h3>
+                <a href="/talentos/talentos.html#civilCentro"><img src="/img/mapa.png" alt="Map icon"></a>
+            </div>
+            <div>
+                <h3>Loot Table</h3>
+                <a href="#"><img src="/img/cofre.png" alt="Loot icon"></a>
+            </div>
+            <div>
+                <h3>Encyclopedia</h3>
+                <a href="#"><img src="/img/enciclopedia.png" alt="Encyclopedia icon"></a>
+            </div>
+            <div>
+                <h3>Map</h3>
+                <a href="/map/map-index.html"><img src="/img/mapa.png" alt="Map icon"></a>
+            </div>
+        </div>
+    </nav>
     </nav>
     <main>
-        <h4 id="Sbridge">Maps</h4>
-        <section>
-                <input type="radio" id="cuarentena-butt" name="map" checked>
-                <input type="radio" id="argoll-butt" name="map">
-                <label for="cuarentena-butt" id="cuarentena-lab"><h5 id="Mbridge">Cuarentena</h5></label>
-                <label for="argoll-butt" id="argoll-lab"><h5 id="Sbridge">Argöll</h5></label>
-            
-            <!-- Switch -->
-            <div class="argoll" id="argoll">
-            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3332a0f0-682f-4191-973a-a5c1d6003a47/dil5dsg-d0ba7ed5-80fd-4eb9-9cc6-8371a442838a.jpg/v1/fill/w_894,h_894,q_70,strp/la_abada_de_argoll_by_varushet_dil5dsg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzMzMzJhMGYwLTY4MmYtNDE5MS05NzNhLWE1YzFkNjAwM2E0N1wvZGlsNWRzZy1kMGJhN2VkNS04MGZkLTRlYjktOWNjNi04MzcxYTQ0MjgzOGEuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.MbzpANxvMaGF0pUbGwoPKz8wWQcOF8FJGql3JEOlmBI" alt="Mapa de Argöll">
+        <section class="mapas">
+            <button><img src="" alt="Left arrow"></button>
+            <div class="botonera-maps">
+                <button type="button" id="argoll">Argöll</button>
+                <button type="button" id="cuarentena">Cuarentena</button>
             </div>
-            <div class="cuarentena" id="cuarentena">
-            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3332a0f0-682f-4191-973a-a5c1d6003a47/dil5bsp-0362a182-6dd3-4fc2-b3eb-96be56c417f2.jpg/v1/fill/w_1191,h_671,q_70,strp/territorio_en_cuarentena_by_varushet_dil5bsp-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIxIiwicGF0aCI6IlwvZlwvMzMzMmEwZjAtNjgyZi00MTkxLTk3M2EtYTVjMWQ2MDAzYTQ3XC9kaWw1YnNwLTAzNjJhMTgyLTZkZDMtNGZjMi1iM2ViLTk2YmU1NmM0MTdmMi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.DLrorqpzbSyXO_whnjqjG1ik8Ec_sCEgfVWoDzpAVgo" alt="Mapa de Cuarentena">
-            </div>
+            <button><img src="" alt="Right arrow"></button>
         </section>
-    </main>
+        <section class="atlas">
+            <aside>
+                <ul><h5>Layers</h5>
+                    <li>layer1</li>
+                </ul>
+            </aside>
+            <article class="marco">
+                <div>
+                    <button type="button">+</button>
+                    <button type="button">-</button>
+                </div>
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3332a0f0-682f-4191-973a-a5c1d6003a47/dil5dsg-d0ba7ed5-80fd-4eb9-9cc6-8371a442838a.jpg/v1/fill/w_894,h_894,q_70,strp/la_abada_de_argoll_by_varushet_dil5dsg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzMzMzJhMGYwLTY4MmYtNDE5MS05NzNhLWE1YzFkNjAwM2E0N1wvZGlsNWRzZy1kMGJhN2VkNS04MGZkLTRlYjktOWNjNi04MzcxYTQ0MjgzOGEuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.MbzpANxvMaGF0pUbGwoPKz8wWQcOF8FJGql3JEOlmBI" alt="Mapa de Argöll">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3332a0f0-682f-4191-973a-a5c1d6003a47/dil5bsp-0362a182-6dd3-4fc2-b3eb-96be56c417f2.jpg/v1/fill/w_1191,h_671,q_70,strp/territorio_en_cuarentena_by_varushet_dil5bsp-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIxIiwicGF0aCI6IlwvZlwvMzMzMmEwZjAtNjgyZi00MTkxLTk3M2EtYTVjMWQ2MDAzYTQ3XC9kaWw1YnNwLTAzNjJhMTgyLTZkZDMtNGZjMi1iM2ViLTk2YmU1NmM0MTdmMi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.DLrorqpzbSyXO_whnjqjG1ik8Ec_sCEgfVWoDzpAVgo" alt="Mapa de Cuarentena">
+            </article>
+        </section>
+            </main>
     <footer>
         <div class="location">
             <h3>LOCATION</h3>

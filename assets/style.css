@@ -103,9 +103,6 @@ nav img{
 }
 #butt:checked ~ #navi-lab>#Mbridge{
     transition: 2s;
-    background-image: url(/img/castle-hover.png);
-    background-size: 65% 95% ;
-    background-repeat: no-repeat;
     background-position: center;
 }
                                                 /*Navegador*/
