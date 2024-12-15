@@ -19,7 +19,6 @@
            <a href="/index.html"><img src="/img/Logo.png" alt="Logo"></a>
         </div>
         <div>Log In</div>
-
     </header>
     <nav>
         <input type="checkbox" id="butt">
@@ -49,9 +48,6 @@
     </nav>
     <main>
         <form action="">
-        <section>
-            <h2>Character Sheet</h2>
-        </section>
             <fieldset class="identidad">
                 <label>Name<input type="text"></label>
                 <label>Race<input type="text"></label>
@@ -160,7 +156,7 @@
                         <option value="2">Cromag</option>
                         <option value="3">Novalt</option></select></label>
                     <label>Ac<input type="number" min="5"></label>
-                    <label>Mx<input type="number" min="5" readonly></label>
+                    <label>Max<input type="number" min="5" readonly></label>
                 </div>
                 <div class="row-3">
                     <label><select id="">
@@ -169,7 +165,7 @@
                         <option value="2">Geruma</option>
                         <option value="3">Sentiment</option></select></label>
                     <label>Ac<input type="number" min="5"></label>
-                    <label>Mx<input type="number" min="5" readonly></label>
+                    <label>Max<input type="number" min="5" readonly></label>
                 </div>
                 <div class="row-3">
                     <label><select id="">
@@ -178,30 +174,30 @@
                         <option value="2">Exaner</option>
                         <option value="3">Mana</option></select></label>
                     <label>Ac<input type="number" min="5"></label>
-                    <label>Mx<input type="number" min="5" readonly></label>
+                    <label>Max<input type="number" min="5" readonly></label>
                 </div>
                 <div class="row-4">
                     <p>H.P.</p>
                     <label>Ac<input type="number" min="1"></label>
-                    <label>Mx<input type="number" min="1" readonly></label>
+                    <label>Max<input type="number" min="1" readonly></label>
                     <p>C.P.</p>
                     <label>Ac<input type="number" min="1"></label>
-                    <label>Mx<input type="number" min="1" readonly></label>                    
+                    <label>Max<input type="number" min="1" readonly></label>                    
                 </div>
                 <div class="row-4">
                     &nbsp;&nbsp;&#8195;&#8195;<label><p>N.A.</p><input type="number" min="1" readonly></label>
                     <label><p>Arm</p><input type="number" min="1" readonly></label>
                     <p class="short">p</p>
                     <label>Ac<input type="number" min="1"></label>
-                    <label>Mx<input type="number" min="1" readonly></label>                    
+                    <label>Max<input type="number" min="1" readonly></label>                    
                 </div>
                 <div class="row-4">
                     <p>Res</p>
                     <label>Ac<input type="number" min="5"></label>
-                    <label>Mx<input type="number" min="5" readonly></label>
+                    <label>Max<input type="number" min="5" readonly></label>
                     <p>Ham</p>
                     <label>Ac<input type="number" min="1"></label>
-                    <label>Mx<input type="number" min="1" readonly></label>                    
+                    <label>Max<input type="number" min="1" readonly></label>                    
                 </div>
                 <div class="row-4">
                     <p>Cor</p>
@@ -924,7 +920,8 @@
                             <label class="casilla-texto"><input type="text"></label>
                             <label class="casilla-peso">ac<input type="number"></label>
                             <label class="casilla-texto"><input type="text"></label>
-                            <label class="casilla-peso">ac<input type="number"></label>
+                            <label class="c
+                            asilla-peso">ac<input type="number"></label>
                             <label class="casilla-texto"><input type="text"></label>
                             <label class="casilla-peso">ac<input type="number"></label>
                             <label class="casilla-texto"><input type="text"></label>
@@ -934,159 +931,8 @@
                         </div>
                     </dialog>
                 </aside>
-            </fieldset>
-            <fieldset class="inv" id="inv">
-                <aside class="bolsa">
-                    <button type="button" onclick="document.querySelector('#bolsa').showModal()" class="bag">
-                        <p>Main Bag</p>
-                    </button>
-                    <button type="button" onclick="invExpand()" class="expand"></button>
-                    <dialog id="bolsa">
-                        <p>Main Bag</p>
-                        <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-peso">Mx<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
-                        </div>
-                    </dialog>
-                </aside>
-                <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-            </fieldset>
-            <fieldset class="inv2" id="inv2">
-                <aside class="bolsa">
-                    <button type="button" onclick="document.querySelector('#bolsa').showModal()" class="bag">
-                        <p>Other Bag</p>
-                    </button>
-                    <button type="button" onclick="inv2Expand()" class="expand"></button>
-                    <dialog id="bolsa">
-                        <p>Other Bag</p>
-                        <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-peso">Mx<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
-                        </div>
-                    </dialog>
-                </aside>
-                <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                <div class="row-bolsa"">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
             </fieldset>
         </form>
     </main>
-    <script>
-        function invExpand() {
-        let inv = document.getElementById("inv");
-        let oldinv = window.getComputedStyle(inv).height;
-
-        if (oldinv === "208px") {
-            inv.style.height = "40rem";
-            inv.style.backgroundImage = "url(/img/Fondo_pergamino.png)";
-        } else {
-            inv.style.height = "13rem";
-            inv.style.backgroundImage = ""
-        }
-}
-
-        function inv2Expand() {
-            let inv = document.getElementById("inv2");
-            let oldinv = window.getComputedStyle(inv2).height;
-
-            if (oldinv === "208px") {
-                inv2.style.height = "40rem";
-                inv2.style.backgroundImage = "url(/img/Fondo_pergamino.png)";
-            } else {
-                inv2.style.height = "13rem";
-                inv2.style.backgroundImage = ""
-            }
-        }
-    </script>
 </body>
 </html>
