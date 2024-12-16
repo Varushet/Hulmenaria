@@ -14,21 +14,21 @@ header {
 }
 #Sbridge{
     transition: 2s;
-    background-image: url(/img/Scastle-hover.png);
+    background-image: url(/assets/img/Scastle-hover.png);
     background-size: 75% 95%;
     background-repeat: no-repeat;
     background-position: 50% 8rem;
 }
 #Mbridge{
     transition: 2s;
-    background-image: url(/img/castle-hover.png);
+    background-image: url(/assets/img/castle-hover.png);
     background-size: 65% 95% ;
     background-repeat: no-repeat;
     background-position:  50% 8rem;
 }
 #Lbridge{
     transition: 2s;
-    background-image: url(/img/castle-hover.png);
+    background-image: url(/assets/img/castle-hover.png);
     background-size: 100% 95% ;
     background-repeat: no-repeat;
     background-position: 50% 8rem;
@@ -36,7 +36,7 @@ header {
 }
 #Lbridge:hover{
     transition: 2s;
-    background-image: url(/img/castle-hover.png);
+    background-image: url(/assets/img/castle-hover.png);
     background-size: 100% 95% ;
     background-repeat: no-repeat;
     background-position: center;
@@ -50,10 +50,11 @@ h1{ /*Hulmenaria*/
 h2{ /*Página*/
     margin: 0 auto;
 }
-h3{ /*Herramientas*/
+h3{ /*Section*/
+    font-family: "MedievalSharp";
     text-align: center;
 }
-h4{ /*Secciones*/
+h4{ /*Article*/
     font-size: 1.7rem;
     text-align: center;
     font-family: "MedievalSharp";
@@ -111,7 +112,7 @@ nav img{
 }
                                                 /*Team*/
 .sts{
-    background-color: rebeccapurple;
+    background-color: rgb(140, 116, 164);
     width: 50%;
 }
 .bar{
@@ -139,8 +140,11 @@ nav img{
     max-height: 0;
     opacity: 0;
     transition: 2s ease;
+    max-width: 100vw;
+    overflow: hidden;
 }
 #roadmap:checked ~ #road{
+    display: flex;
     padding: 2rem 3rem;
     z-index: 1;
     height: 40rem;
@@ -150,7 +154,7 @@ nav img{
 }
 #roadmap:checked ~ #roadmap-lab>#Mbridge{
     transition: 2s;
-    background-image: url(/img/castle-hover.png);
+    background-image: url(/assets/img/castle-hover.png);
     background-size: 65% 95% ;
     background-repeat: no-repeat;
     background-position: center;

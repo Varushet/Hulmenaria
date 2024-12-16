@@ -30,7 +30,7 @@ aside h5{
 }
 section{
     width: 285rem;
-    background-image: url(/img/Fondo_pergamino.png);
+    background-image: url(/assets/img/Fondo_pergamino.png);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 8rem 14rem;

@@ -1,0 +1,44 @@
+main{ /*
+    width: 100%;
+    height: 100vh; */
+    background-image: url(/assets/img/Fondo_pergamino.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    align-items: flex-end;
+    font-size: 4rem;
+    color: rgb(247, 197, 72);
+    text-shadow: 
+      -1px -1px 0px black;
+}
+section{
+    width: 25rem;
+    height: 20rem;
+    margin: 1rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url(/assets/img/enciclopedia.png);
+    background-size: 100% 100%;
+}
+article{
+    background-color: aqua;
+    width: 95%;
+    height: 15rem;
+    display: flex;
+    overflow: scroll;
+}
+article div{
+    background-color: rebeccapurple;
+    margin: 2rem;
+    min-width: 15rem;
+    background-image: url(/enciclopedia/img/libroO.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
