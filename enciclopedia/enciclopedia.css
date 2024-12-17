@@ -28,17 +28,46 @@ section{
     background-size: 100% 100%;
 }
 article{
-    background-color: aqua;
     width: 95%;
     height: 15rem;
     display: flex;
     overflow: scroll;
 }
 article div{
-    background-color: rebeccapurple;
     margin: 2rem;
     min-width: 15rem;
-    background-image: url(/enciclopedia/img/libroO.png);
+    background-image: url(/enciclopedia/img/libroC.png);
     background-size: contain;
     background-repeat: no-repeat;
+}
+article h4{
+   width: unset;
+   font-size: 1.5rem;
+   margin: 1.4rem 0;
+   transform: rotate(-40deg) skewX(20deg);
+}
+.glosario{
+    width: 95%;
+    height: 95vh;
+    background-image: url(/enciclopedia/img/libroOC.png);
+    background-size: 100% 100%;
+    margin: 2rem;
+}
+.glosario h4{
+    font-size: 2.5rem;
+}
+.glosario div{
+    width: 84%;
+    height: 80%;
+    margin: 0 9rem;
+    display: block;
+    column-count: 4;
+}
+.glosario li{
+    margin: 0.5rem 1rem;
+    width: 12rem;
+    font-size: 2rem;
+}
+.glosario li:hover{
+    background-color: azure;
 }
