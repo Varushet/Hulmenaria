@@ -52,22 +52,39 @@ article h4{
     background-image: url(/enciclopedia/img/libroOC.png);
     background-size: 100% 100%;
     margin: 2rem;
+    position: relative;
 }
 .glosario h4{
     font-size: 2.5rem;
 }
 .glosario div{
-    width: 84%;
+    width: 82%;
     height: 80%;
     margin: 0 9rem;
+    overflow: hidden;
     display: block;
     column-count: 4;
+    column-gap: 2rem;
 }
 .glosario li{
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 0 0 3rem;
     width: 12rem;
     font-size: 2rem;
 }
 .glosario li:hover{
     background-color: azure;
+}
+.glosario h5{
+    border-bottom: 3px solid chocolate;
+    border-radius: 0 0 3rem 0;
+    height: 2rem;
+    width: 15rem;
+    font-size: 2rem;
+    margin: unset;
+    padding: 1rem 0 0 0;
+    list-style: none;
+    text-align: start;
+}
+.prev, .post{
+    position: absolute;
 }
