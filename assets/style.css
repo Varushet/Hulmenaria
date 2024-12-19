@@ -1,8 +1,15 @@
 *   {padding: 0; margin: 0;}
 a   {text-decoration: none; color: black;}
+:root{
+    --dorado: rgb(202, 134, 7);
+}
 /*Reset*/
+body{
+    background-image: url(/assets/img/title-fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 header {
-    background-color: rebeccapurple;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -43,8 +50,9 @@ header {
 }
         /*Bridge decor*/
 h1{ /*Hulmenaria*/
-    font-size: 3rem;
+    font-size: 5rem;
     font-family: "UnifrakturMaguntia";
+    color:  var(--dorado);
 }
 h2{ /*Página*/
     margin: 0 auto;
@@ -70,13 +78,12 @@ h5{ /*Nombres Propios*/
 }
 h6{ /**/
     margin: 0 auto;
-}         
-Nav{
-    background-color: rgb(238, 13, 43);
+}
+nav{
+    background: transparent;
 }
 .tools div{
     margin: 0.5rem;
-    background-color: aqua;
     border: 5px double black;
 }
 nav img{
@@ -107,12 +114,15 @@ nav img{
 }
                                                 /*Navegador*/
 .team{
-    background-color: pink;
+    background-color: rgba(255, 192, 203, 0.486);
 }
                                                 /*Team*/
 .sts{
-    background-color: rgb(140, 116, 164);
+    background-color: rgba(140, 116, 164, 0.8);
     width: 50%;
+}
+.sts li{
+    list-style: none;
 }
 .bar{
     background-color: greenyellow;

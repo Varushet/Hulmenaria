@@ -1,24 +1,27 @@
-main{ /*
-    width: 100%;
-    height: 100vh; */
-    background-image: url(/assets/img/Fondo_pergamino.png);
-    background-size: cover;
+main{
+    background-image: url(/assets/img/fondo_pergamino.png);
+    background-size: contain /*contain*/;
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
+    margin: 2rem;
 }
 h3{
     align-items: flex-end;
     font-size: 4rem;
-    color: rgb(247, 197, 72);
+    color: var(--dorado);
     text-shadow: 
-      -1px -1px 0px black;
+    1px 1px 0px black, 
+    -1px 1px 0px black, 
+    1px -1px 0px black, 
+    -1px -1px 0px black;
 }
 section{
-    width: 25rem;
-    height: 20rem;
+    width: 20rem;
+    height: 16rem;
     margin: 1rem 0.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -57,7 +60,7 @@ article h4{
 .glosario h4{
     font-size: 2.5rem;
 }
-.glosario div{
+.glosario .list{
     width: 82%;
     height: 80%;
     margin: 0 9rem;
@@ -72,7 +75,7 @@ article h4{
     font-size: 2rem;
 }
 .glosario li:hover{
-    background-color: azure;
+    background-color: rgba(139, 107, 3, 0.308);
 }
 .glosario h5{
     border-bottom: 3px solid chocolate;
@@ -87,4 +90,20 @@ article h4{
 }
 .prev, .post{
     position: absolute;
+    background-image: url();
+    width: 8rem;
+    height: 8rem;
+    transition: 0.5s;
+    transform: translateY(-50%);
+}
+.prev:hover, .post:hover{
+    width: 12rem;
+    height: 12rem;
+}
+.prev{
+    top: 50%;
+}
+.post{
+    top: 50%;
+    right: 0;
 }

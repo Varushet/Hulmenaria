@@ -22,16 +22,19 @@ fieldset{
     font-size: 2rem;
 }
 section{
-    background-color: #4caf50;
-    width: 90vw;
+    background-image: url(/assets/img/fondo_pergamino.png);
+    background-size: 100% 100%;
+    box-shadow: 5px 5px 10px 0px black;
+    background-repeat: no-repeat;
+    width: 100vw;
     height: 40rem;
     text-align: center;
-    margin: 0 1rem;
 }
-section {
+section h2{
     font-family: "UnifrakturMaguntia" ;
     font-size: 5rem;
     padding: 3rem;
+    color: var(--dorado);
 }
 .equipo{
     height: 80rem;
@@ -110,7 +113,6 @@ main label{
 }
 input, select, textarea{
     background: none;
-    background-image: url();
     border: none;
     border: 5px double black;
     font-size: 4rem;
@@ -136,9 +138,12 @@ dialog{
     width: 40rem;
     height: 22.5rem;
     margin: auto;
-    background-image: url(/assets/img/Fondo_pergamino.png);
+    padding: 1rem;
+    border: none;
+    background: transparent;
+    background-image: url(/assets/img/fondo_pergamino.png);
     background-size: contain;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     text-align: center;
 }
 dialog div{

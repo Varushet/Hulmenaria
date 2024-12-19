@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <style>
-
+body{
+    background-size: contain;
+}
 </style>
 <body>
     <header>
@@ -48,9 +50,9 @@
     </nav>
     <main>
         <form action="">
-        <section>
-            <h2>Character Sheet</h2>
-        </section>
+            <section>
+                <h2>Character Sheet</h2>
+            </section>
             <fieldset class="identidad">
                 <label>Name<input type="text"></label>
                 <label>Race<input type="text"></label>
@@ -1067,7 +1069,7 @@
 
         if (oldinv === "208px") {
             inv.style.height = "40rem";
-            inv.style.backgroundImage = "url(/img/Fondo_pergamino.png)";
+            inv.style.backgroundImage = "url(/assets/img/Fondo_pergamino.png)";
         } else {
             inv.style.height = "13rem";
             inv.style.backgroundImage = ""
@@ -1080,7 +1082,7 @@
 
             if (oldinv === "208px") {
                 inv2.style.height = "40rem";
-                inv2.style.backgroundImage = "url(/img/Fondo_pergamino.png)";
+                inv2.style.backgroundImage = "url(/assets/img/Fondo_pergamino.png)";
             } else {
                 inv2.style.height = "13rem";
                 inv2.style.backgroundImage = ""
