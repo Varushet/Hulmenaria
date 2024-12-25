@@ -49,6 +49,27 @@ article h4{
    margin: 1.4rem 0;
    transform: rotate(-40deg) skewX(20deg);
 }
+.prev, .post{
+    position: absolute;
+    background-image: url(/assets/img/flecha.png);
+    background-size: 100% 100%;
+    width: 8rem;
+    height: 8rem;
+    transition: 0.5s;
+}
+.prev:hover, .post:hover{
+    width: 12rem;
+    height: 12rem;
+}
+.prev{
+    top: 50%;
+    transform: translateY(-50%) rotatey(180deg);
+}
+.post{
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
 .glosario{
     width: 95%;
     height: 95vh;
@@ -71,13 +92,13 @@ article h4{
 }
 .glosario li{
     margin: 0.5rem 0 0 3rem;
-    width: 12rem;
+    width: 8rem;
     font-size: 2rem;
 }
 .glosario li:hover{
     background-color: rgba(139, 107, 3, 0.308);
 }
-.glosario h5{
+div h5{
     border-bottom: 3px solid chocolate;
     border-radius: 0 0 3rem 0;
     height: 2rem;
@@ -88,22 +109,41 @@ article h4{
     list-style: none;
     text-align: start;
 }
-.prev, .post{
-    position: absolute;
-    background-image: url();
-    width: 8rem;
-    height: 8rem;
-    transition: 0.5s;
-    transform: translateY(-50%);
+.entrada{
+    width: 95%;
+    height: 95vh;
+    background-image: url(/enciclopedia/img/libroOC.png);
+    background-size: 100% 100%;
+    margin: 2rem;
+    position: relative;
+    display: flex;
 }
-.prev:hover, .post:hover{
-    width: 12rem;
-    height: 12rem;
+.card-1, .card-2{
+    width: 40%;
+    height: 95%;
+    display: grid;
 }
-.prev{
-    top: 50%;
+.entrada .card-1{
+    margin: 1rem 0 0 7.5rem;
+    grid-template: repeat(18, 1fr) / repeat(6, 1fr);
 }
-.post{
-    top: 50%;
-    right: 0;
+.card-1 .imagen{
+    background-image: url(/enciclopedia/img/Ciudadano.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0rem -8rem;
+    grid-column: 1/7;
+    grid-row: 2/17;
 }
+
+
+
+
+
+
+.entrada .card-2{
+    background-color: rgba(128, 124, 101, 0.692);
+    margin: 1rem 0rem 0 2rem;    
+}
+
+

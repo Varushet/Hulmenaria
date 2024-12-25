@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="5.8899908mm"
+   height="6.6342931mm"
+   viewBox="0 0 5.8899908 6.6342931"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch4">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(-56.877175,-69.640945)">
+    <g
+       id="g64-8"
+       transform="matrix(0.41107166,0,0,0.41107166,55.684217,25.392406)">
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.425;stroke-dasharray:none;stroke-opacity:1"
+         id="path63-43"
+         d="m 10.066251,107.78212 c 0.392851,0 6.607947,3.58829 6.804372,3.9285 0.196425,0.34022 0.196425,7.5168 0,7.85702 -0.196425,0.34021 -6.411522,3.9285 -6.804372,3.9285 -0.392851,0 -6.6079472,-3.58829 -6.8043725,-3.9285 -0.1964253,-0.34022 -0.1964251,-7.5168 2e-7,-7.85702 0.1964253,-0.34022 6.4115217,-3.9285 6.8043723,-3.9285 z"
+         transform="translate(0,0.07228827)" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.425;stroke-dasharray:none;stroke-opacity:1"
+         id="path64-92"
+         d="m 13.60322,113.97076 c 0.279148,0.48349 -5.0246598,9.66996 -5.5829553,9.66996 -0.5582956,0 -5.8621035,-9.18647 -5.5829558,-9.66996 0.2791478,-0.4835 10.8867631,-0.4835 11.1659111,0 z"
+         transform="matrix(1.1917332,0,0,1.1917332,0.50823521,-23.97954)" />
+    </g>
+  </g>
+  <g
+     id="layer3"
+     transform="translate(-56.877175,-69.640945)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:'Kingthings Spikeless';-inkscape-font-specification:'Kingthings Spikeless, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269439;stroke-dasharray:none;stroke-opacity:1"
+       x="61.509636"
+       y="71.38604"
+       id="text13-9-3-88-15-67-2-05-30-4"
+       transform="scale(0.96387483,1.0374791)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:'Kingthings Spikeless';-inkscape-font-specification:'Kingthings Spikeless, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269439;stroke-dasharray:none"
+         x="61.509636"
+         y="71.38604"
+         id="tspan52-2-4-4">8</tspan></text>
+  </g>
+</svg>

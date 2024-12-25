@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6.3495078mm"
+   height="6.3494954mm"
+   viewBox="0 0 6.3495078 6.3494954"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch4">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(-134.07476,-62.168472)">
+    <g
+       id="g233-97"
+       style="display:inline;stroke-width:0.4;stroke-dasharray:none"
+       transform="matrix(0.50131736,0,0,0.50131736,132.4601,-4.4893151)">
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.317946;stroke-dasharray:none;stroke-opacity:1"
+         id="path225-48"
+         d="m 7.9170874,136.61071 -3.7309783,1.54542 -3.7309783,-1.54542 -1.5454218,-3.73098 1.54542177,-3.73098 3.73097823,-1.54542 3.7309783,1.54542 1.5454219,3.73098 z"
+         transform="matrix(1.1623105,0.48144477,-0.48144477,1.1623105,68.662335,-17.164826)" />
+      <path
+         style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.445362;stroke-dasharray:none;stroke-opacity:1"
+         id="path225-1-2"
+         d="m 7.9170874,136.61071 -3.7309783,1.54542 -3.7309783,-1.54542 -1.5454218,-3.73098 1.54542177,-3.73098 3.73097823,-1.54542 3.7309783,1.54542 1.5454219,3.73098 z"
+         transform="matrix(0.82977934,0.34370585,-0.34370585,0.82977934,51.751636,27.598415)" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 3.4354492,136.76891 1.7776692,0.73174"
+         id="path226-5" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 7.7266601,134.92509 7.0197265,133.1805"
+         id="path227-82" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 11.377083,134.93336 0.7028,-1.7694"
+         id="path228-561" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 13.927832,137.49238 1.773535,-0.74001"
+         id="path229-93" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 13.927832,141.09319 1.781803,0.75241"
+         id="path230-71" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 11.339876,143.67288 0.77308,1.79834"
+         id="path231-32" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 7.7431965,143.65634 -0.7152018,1.76527"
+         id="path232-06" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 5.1883137,141.08079 3.4354492,141.8332"
+         id="path233-89" />
+    </g>
+  </g>
+  <g
+     id="layer3"
+     transform="translate(-134.07476,-62.168472)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:'Kingthings Spikeless';-inkscape-font-specification:'Kingthings Spikeless, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269439;stroke-dasharray:none;stroke-opacity:1"
+       x="141.45271"
+       y="64.023087"
+       id="text254"
+       transform="scale(0.96387483,1.0374791)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:'Kingthings Spikeless';-inkscape-font-specification:'Kingthings Spikeless, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269439;stroke-dasharray:none"
+         x="141.45271"
+         y="64.023087"
+         id="tspan254">18</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6.4029322mm"
+   height="6.4029317mm"
+   viewBox="0 0 6.4029322 6.4029317"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch4">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(-2.3182439,-9.3840692)">
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.00307;stroke-dasharray:none;stroke-opacity:1"
+       id="path24"
+       d="m 32.948079,31.330293 c 1.041677,1.041677 1.041677,28.421395 0,29.463072 -1.041677,1.041677 -28.421395,1.041677 -29.4630719,0 -1.0416769,-1.041677 -1.0416768,-28.421396 1e-7,-29.463072 1.0416769,-1.041677 28.4213948,-1.041677 29.4630718,0 z"
+       transform="matrix(0.1999126,0,0,0.1999126,1.8779934,3.377196)" />
+  </g>
+  <g
+     id="layer3"
+     transform="translate(-2.3182439,-9.3840692)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:'Kingthings Spikeless';-inkscape-font-specification:'Kingthings Spikeless, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269439;stroke-dasharray:none;stroke-opacity:1"
+       x="5.3626194"
+       y="13.112387"
+       id="text205"
+       transform="scale(0.96387483,1.0374791)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:'Kingthings Spikeless';-inkscape-font-specification:'Kingthings Spikeless, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269439;stroke-dasharray:none"
+         x="5.3626194"
+         y="13.112387"
+         id="tspan205">1</tspan></text>
+  </g>
+</svg>

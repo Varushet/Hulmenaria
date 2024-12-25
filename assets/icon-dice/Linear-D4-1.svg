@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6.9484763mm"
+   height="6.2513757mm"
+   viewBox="0 0 6.9484763 6.2513757"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch4">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(-2.0454716,-1.9973962)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.69612;stroke-dasharray:none;stroke-opacity:1"
+       id="path2"
+       d="m 40.8513,14.2211 c 2.848073,0 29.904759,46.863559 28.480723,49.330062 -1.424036,2.466503 -55.537412,2.466501 -56.961448,-2e-6 C 10.946539,61.084657 38.003228,14.2211 40.8513,14.2211 Z"
+       onmouseover=""
+       transform="matrix(0.11822696,0,0,0.11822696,0.689985,0.41634236)" />
+  </g>
+  <g
+     id="layer3"
+     transform="translate(-2.0454716,-1.9973962)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:'Kingthings Spikeless';-inkscape-font-specification:'Kingthings Spikeless, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269439;stroke-dasharray:none;stroke-opacity:1"
+       x="5.3626194"
+       y="6.484025"
+       id="text215"
+       transform="scale(0.96387483,1.0374791)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:'Kingthings Spikeless';-inkscape-font-specification:'Kingthings Spikeless, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269439;stroke-dasharray:none"
+         x="5.3626194"
+         y="6.484025"
+         id="tspan215">1</tspan></text>
+  </g>
+</svg>

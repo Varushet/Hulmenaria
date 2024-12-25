@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6.3971992mm"
+   height="6.6676769mm"
+   viewBox="0 0 6.3971992 6.6676769"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch4">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1"
+     style="display:inline"
+     transform="translate(-33.345561,-38.557144)">
+    <g
+       id="g52-19"
+       transform="matrix(0.45661611,0,0,0.45661611,29.238481,-5.2876352)">
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.425;stroke-dasharray:none;stroke-opacity:1"
+         id="path42-5"
+         d="m 13.078444,94.152881 c 0.289144,0 4.589109,3.124108 4.67846,3.399101 0.08935,0.274993 -1.55309,5.329908 -1.787013,5.499858 -0.233923,0.16996 -5.548972,0.16996 -5.782895,0 -0.2339231,-0.16995 -1.8763634,-5.224866 -1.7870127,-5.499859 0.089351,-0.274993 4.3893157,-3.3991 4.6784607,-3.3991 z"
+         transform="matrix(0.88060534,0,0,0.88060534,4.4826631,16.219388)" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.425;stroke-dasharray:none;stroke-opacity:1"
+         id="path43-3"
+         d="m 7.7338273,94.351295 c 0.2190524,0 3.9894067,1.225063 4.1666247,1.353818 0.177217,0.128756 2.507424,3.336012 2.575115,3.544343 0.06769,0.208331 0.06769,4.172714 0,4.381044 -0.06769,0.20833 -2.397899,3.41559 -2.575116,3.54435 -0.177217,0.12875 -3.9475717,1.35381 -4.1666241,1.35381 -0.2190524,0 -3.9894071,-1.22506 -4.1666242,-1.35381 -0.1772171,-0.12876 -2.5074244,-3.33602 -2.57511529,-3.54435 -0.0676909,-0.20833 -0.0676908,-4.172713 1.2e-7,-4.381045 0.067691,-0.208331 2.39789837,-3.415586 2.57511547,-3.544342 0.1772171,-0.128756 3.9475719,-1.353818 4.1666243,-1.353818 z"
+         transform="translate(8.2657833,1.8823071)" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.425;stroke-dasharray:none;stroke-opacity:1"
+         d="m 15.97915,99.15871 v -2.9053"
+         id="path48-6" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.425;stroke-dasharray:none;stroke-opacity:1"
+         d="m 20.101812,102.15608 2.659782,-0.99231"
+         id="path49-31" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.425;stroke-dasharray:none;stroke-opacity:1"
+         d="m 18.505943,106.98461 1.647019,2.07667"
+         id="path50-5" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.425;stroke-dasharray:none;stroke-opacity:1"
+         d="m 13.479912,106.97126 -1.649273,2.09052"
+         id="path51-34" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.425;stroke-dasharray:none;stroke-opacity:1"
+         d="M 11.876949,102.14073 9.2887762,101.12797"
+         id="path52-0" />
+    </g>
+  </g>
+  <g
+     id="layer3"
+     transform="translate(-33.345561,-38.557144)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:'Kingthings Spikeless';-inkscape-font-specification:'Kingthings Spikeless, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269439;stroke-dasharray:none;stroke-opacity:1"
+       x="37.323196"
+       y="41.424335"
+       id="text160"
+       transform="scale(0.96387483,1.0374791)"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.46944px;font-family:'Kingthings Spikeless';-inkscape-font-specification:'Kingthings Spikeless, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.269439;stroke-dasharray:none"
+         x="37.323196"
+         y="41.424335"
+         id="tspan160">5</tspan></text>
+  </g>
+</svg>
