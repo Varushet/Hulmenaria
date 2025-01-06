@@ -5,9 +5,8 @@ a   {text-decoration: none; color: black;}
 }
 /*Reset*/
 body{
-    background-image: url(/assets/img/title-fondo.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(/assets/img/dream_TradingCard\(2\).jpg);
+    background-size: 100%;
 }
 header {
     display: flex;

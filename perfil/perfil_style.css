@@ -20,26 +20,43 @@ fieldset{
     width: 80rem;
     height: 45rem;
     font-size: 2rem;
+    border: none;
 }
 section{
     background-image: url(/assets/img/fondo_pergamino.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 80rem;
+    width: 20rem;
     height: 40rem;
     text-align: center;
+    position: fixed;
+    z-index: 5;
+    top: 1rem;
 }
 section h2{
     font-family: "UnifrakturMaguntia" ;
-    font-size: 5rem;
-    padding: 3rem;
+    font-size: 4rem;
+    padding: 2rem 0;
     color: var(--dorado);
     text-shadow: 
     1px 1px 0px black, 
     -1px 1px 0px black, 
     1px -1px 0px black, 
     -1px -1px 0px black;
-    
+}
+section a{
+    font-size: 3rem;
+    border: none;
+    background: transparent;
+    margin: 2rem;
+}
+section img{
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 .equipo{
     height: 80rem;
@@ -48,7 +65,7 @@ section h2{
     background-size: cover;
     position: absolute;
     transform: translateX(-50%);
-    bottom: 5rem;
+    bottom: 10rem;
     left: 50%;
 }
 .atr{
@@ -58,18 +75,21 @@ section h2{
     justify-content: center;
     max-height: 45rem;
     position: absolute;
-    bottom: 5rem;
+    bottom: 10rem;
     right: 5rem;
 }
 .identidad{
     position: absolute;
-    bottom: 55rem;
+    bottom: 60rem;
     left: 5rem;
 }
 .poder{
     position: absolute;
-    bottom: 55rem;
+    bottom: 60rem;
     right: 5rem;
+}
+.poder label{
+    width: 50%;
 }
 .inv{
     width: 40rem;
@@ -78,7 +98,7 @@ section h2{
     display: flex;
     flex-wrap: nowrap;
     position: absolute;
-    top: 48rem;
+    top: 43rem;
     right: 50%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -97,7 +117,7 @@ section h2{
     display: flex;
     flex-wrap: nowrap;
     position: absolute;
-    top: 48rem;
+    top: 43rem;
     left: 50%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -113,7 +133,6 @@ fieldset div{
 main label{
     display: flex;
     align-items: center;
-    width: 50%;
     height: 7.5rem;
 }
 input, select, textarea{
@@ -179,15 +198,14 @@ dialog input[type="number"]{
     padding: 2rem 1rem 0 4rem;
 }
                                         /* Poder e Identidad fieldset */
+.row-1{
+    width: 50%;
+}
 .row-2{
     align-items: center;
 }
-.row-2 label{
-    width: 100%;
-}
 .row-2 select, .row-2 input[type="text"]{
     font-size: 2.5rem;
-    width: 300%;
 }
 .row-3{
     margin-top: 0.9rem;
@@ -225,9 +243,15 @@ dialog input[type="number"]{
     appearance: none;
     -moz-appearance: textfield;
 }
+.row-4 span{
+    margin: 0 2rem;
+}
 .row-cuadrado{
     display: flex;
     flex-wrap: wrap;
+}
+.row-cuadrado label{
+    width: 50%;
 }
 .row-cuadrado select{
     font-size: 2rem;
@@ -309,7 +333,7 @@ input[type="range"]::-moz-range-thumb {
     background-image: url();
     height: 10%;
 }
-#cap{
+.atr label .cap{
     width: 2rem;
 }
 .luk{

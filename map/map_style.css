@@ -17,9 +17,17 @@ h5{
     justify-content: space-between;
 }
 .mapas>button{
+    background: transparent;
+    background-image: url(/assets/img/flecha.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     width: 8rem;
     height: 5rem;
     margin: 2rem;
+    border: none;
+}
+.mapas .izquierda{
+    transform: rotatey(180deg);
 }
 .botonera-maps{
     width: 80%;
@@ -81,7 +89,7 @@ aside li{
 }
 .marco button{
     opacity: 0.2;
-    background: url(/img/selector-blanco.png) no-repeat;
+    background: url(/assets/img/selector-blanco.png) no-repeat;
     background-size: 100% 100%;
     color: white;
     border: none;

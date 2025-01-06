@@ -10,9 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <style>
-body{
-    background-size: cover;
-}
 </style>
 <body>
     <header>
@@ -50,332 +47,353 @@ body{
     </nav>
     <main>
         <form action="">
-            <section>
+            <section class="menu">
                 <h2>Character Sheet</h2>
+                <img src="/assets/img/casilla.png" alt="">
+                <a href="#identidad">Identity</a>
+                <a href="#poder">Power</a>
+                <a href="#atr">Atributes</a>
+                <a href="#hab">Habilites</a>
+                <a href="#equipo">Inventory</a>
+                <a href="#inv2">Bags</a>
             </section>
-            <fieldset class="identidad">
-                <label>Name<input type="text"></label>
-                <label>Race<input type="text"></label>
-                <label>Mutation<textarea></textarea></label>
+
+            <fieldset class="identidad" id="identidad">
+                <label class="row-1">Name<input type="text" name="name"></label>
+                <label class="row-1">Race<input type="text" name="race"></label>
+                <label class="row-1">Mutation<textarea name="mutation"></textarea></label>
                 <div class="row-cuadrado">
                     <p>Alignment</p>
-                    <label><select>
-                        <option value="">Temper</option>
-                        <option value="1">Altruist</option>
-                        <option value="2">Lawful</option>
-                        <option value="3">Moderate</option>
-                        <option value="$">Vicious</option>
-                        <option value="4">Chaotic</option></select></label>
-                    <label><select>
-                        <option value="">Attitude</option>
-                        <option value="1">Gentle</option>
-                        <option value="2">Moderate</option>
-                        <option value="3">Agressive</option></select></label>
-                    <label><select>
-                        <option value="">Faction</option>
-                        <option value="1">Imperial</option>
-                        <option value="2">Sylvan</option>
-                        <option value="2">Hermit</option>
-                        <option value="2">Sleeper</option>
-                        <option value="2">Nomad</option>
-                        <option value="2">Refugee</option>
-                        <option value="2">Outlaw</option>
-                        <option value="2">Noctil</option>
-                        <option value="2">Cultist</option>
-                        <option value="3">Ravager</option></select></label>
-                    <label><select>
-                        <option value="">Function</option>
-                        <option value="1">Guardian</option>
-                        <option value="2">Stalker</option>
-                        <option value="2">Worker</option>
-                        <option value="2">Trader</option>
-                        <option value="2">Explorer</option>
-                        <option value="2">Hoarder</option>
-                        <option value="2">Researcher</option>
-                        <option value="2">Emissary</option></select></label>
+                    <label><select name="temper">
+                        <option>Temper</option>
+                        <option>Altruist</option>
+                        <option>Lawful</option>
+                        <option>Moderate</option>
+                        <option>Vicious</option>
+                        <option>Chaotic</option>
+                    </select></label>
+                    <label><select name="attitude">
+                        <option>Attitude</option>
+                        <option>Gentle</option>
+                        <option>Moderate</option>
+                        <option>Agressive</option>
+                    </select></label>
+                    <label><select name="faction">
+                        <option>Faction</option>
+                        <option>Imperial</option>
+                        <option>Sylvan</option>
+                        <option>Hermit</option>
+                        <option>Sleeper</option>
+                        <option>Nomad</option>
+                        <option>Refugee</option>
+                        <option>Outlaw</option>
+                        <option>Noctil</option>
+                        <option>Cultist</option>
+                        <option>Ravager</option>
+                    </select></label>
+                    <label><select name="function">
+                        <option>Function</option>
+                        <option>Guardian</option>
+                        <option>Stalker</option>
+                        <option>Worker</option>
+                        <option>Trader</option>
+                        <option>Explorer</option>
+                        <option>Hoarder</option>
+                        <option>Researcher</option>
+                        <option>Emissary</option>
+                    </select></label>
                 </div>
                 <div class="row-2">
-                    <label>Age<input type="number" min="1">
-                        <label>Title<input type="text"></label></label>
-                </div> <div class="row-2">
-                    <label>Sign<select>
-                        <option value="">Incarnation</option>
-                        <option value="1">Dragon</option>
-                        <option value="2">Phoe</option>
-                        <option value="3">Basilisc</option>
-                        <option value="4">Manticore</option>
-                        <option value="5">Leviatan</option>
-                        <option value="6">Unicorn</option>
-                        <option value="7">Sphinx</option>
-                        <option value="8">Hydra</option>
-                        <option value="9">Lammasu</option>
-                        <option value="10">Gryphon</option></select></label>
-                    <label><select>
-                        <option value="">Constelation</option>
-                        <option value="1">Labrator</option>
-                        <option value="2">Artisan</option>
-                        <option value="3">Alchemist</option>
-                        <option value="4">Glutton</option>
-                        <option value="5">Satyr</option>
-                        <option value="6">Dilettante</option>
-                        <option value="7">Foreign</option>
-                        <option value="8">Warrior</option>
-                        <option value="9">King</option>
-                        <option value="10">Usurer</option>
-                        <option value="11">Merchant</option>
-                        <option value="12">Guardian</option>
-                        <option value="13">Betrayer</option>
-                        <option value="14">Fool</option>
-                        <option value="15">Hypocrite</option>
-                        <option value="16">Healer</option>
-                        <option value="17">Soothsayer</option>
-                        <option value="18">Priest</option></select></label>
-                    </div>
-                <div class="row-2">
-                    <label>Class1<label><input type="number"></label>
-                        <input type="text"></label></div>
-                <div class="row-2">
-                    <label>Class2<label><input type="number"></label>
-                        <input type="text"></label>
+                    <label>Age<input type="number" min="1" name="age"></label>
+                    <label>Title<input type="text" name="title"></label>
                 </div>
                 <div class="row-2">
-                    <label>Class3<label><input type="number"></label>
-                        <input type="text"></label>
+                    <label class="row-1">Sign<select name="incarnation">
+                        <option>Incarnation</option>
+                        <option>Dragon</option>
+                        <option>Phoe</option>
+                        <option>Basilisc</option>
+                        <option>Manticore</option>
+                        <option>Leviatan</option>
+                        <option>Unicorn</option>
+                        <option>Sphinx</option>
+                        <option>Hydra</option>
+                        <option>Lammasu</option>
+                        <option>Gryphon</option>
+                    </select></label>
+                    <label class="row-1"><select name="constelation">
+                        <option>Constelation</option>
+                        <option>Labrator</option>
+                        <option>Artisan</option>
+                        <option>Alchemist</option>
+                        <option>Glutton</option>
+                        <option>Satyr</option>
+                        <option>Dilettante</option>
+                        <option>Foreign</option>
+                        <option>Warrior</option>
+                        <option>King</option>
+                        <option>Usurer</option>
+                        <option>Merchant</option>
+                        <option>Guardian</option>
+                        <option>Betrayer</option>
+                        <option>Fool</option>
+                        <option>Hypocrite</option>
+                        <option>Healer</option>
+                        <option>Soothsayer</option>
+                        <option>Priest</option>
+                    </select></label>
                 </div>
-                    <label>Synergy<input type="text"></label>    
+                <div class="row-2">
+                    <label>Class1<input type="number" name="class1Talent"></label>
+                    <label><input type="text" name="class1"></label>
+                </div>
+                <div class="row-2">
+                    <label>Class2<input type="number" name="class2Talent"></label>
+                    <label><input type="text" name="class2"></label>
+                </div>
+                <div class="row-2">
+                    <label>Class3<input type="number" name="class3Talent"></label>
+                    <label><input type="text" name="class3"></label>
+                </div>
+                <label class="row-1">Synergy<input type="text" name="synergy"></label>
             </fieldset>
-            <fieldset class="poder">
+            <fieldset class="poder" id="poder">
                 <div class="row-3">
-                    <label>Lvl<input type="number" min="1" readonly></label>
-                    <label>E.P.<input type="number" min="1"></label>
-                    <label>X.P.<input type="number" min="1"></label>
+                    <label>Lvl<input type="number" min="1" readonly name="lvl"></label>
+                    <label>E.P.<input type="number" min="1" name="ep"></label>
+                    <label>X.P.<input type="number" min="1" name="xp"></label>
                 </div>
                 <div class="karma">
                     <p>Karma</p>
-                    <label class="karma"><span>Good</span><input type="range" step="10" value="50"></label>
-                    <label class="karma"><span>Evil</span><input type="range" step="10" value="50"></label></div>
-                <div class="row-3">
-                    <label><select id="">
-                        <option value="">Mistyc</option>
-                        <option value="1">Favilyan</option>
-                        <option value="2">Cromag</option>
-                        <option value="3">Novalt</option></select></label>
-                    <label>Ac<input type="number" min="5"></label>
-                    <label>Mx<input type="number" min="5" readonly></label>
+                    <label class="karma"><span>Good</span><input type="range" step="10" value="0" name="karmaGood"></label>
+                    <label class="karma"><span>Evil</span><input type="range" step="10" value="0" name="karmaEvil"></label>
                 </div>
                 <div class="row-3">
-                    <label><select id="">
-                        <option value="">Insiders</option>
-                        <option value="1">Polarity</option>
-                        <option value="2">Geruma</option>
-                        <option value="3">Sentiment</option></select></label>
-                    <label>Ac<input type="number" min="5"></label>
-                    <label>Mx<input type="number" min="5" readonly></label>
+                    <label><select name="mistyc">
+                        <option>Mistyc</option>
+                        <option>Favilyan</option>
+                        <option>Cromag</option>
+                        <option>Novalt</option>
+                    </select></label>
+                    <label>Ac<input type="number" min="5" name="acMistyc"></label>
+                    <label>Mx<input type="number" min="5" readonly name="mxMistyc"></label>
                 </div>
                 <div class="row-3">
-                    <label><select id="">
-                        <option value="">Naturals</option>
-                        <option value="1">Elements</option>
-                        <option value="2">Exaner</option>
-                        <option value="3">Mana</option></select></label>
-                    <label>Ac<input type="number" min="5"></label>
-                    <label>Mx<input type="number" min="5" readonly></label>
+                    <label><select name="insiders">
+                        <option>Insiders</option>
+                        <option>Polarity</option>
+                        <option>Geruma</option>
+                        <option>Sentiment</option>
+                    </select></label>
+                    <label>Ac<input type="number" min="5" name="acInsiders"></label>
+                    <label>Mx<input type="number" min="5" readonly name="mxInsiders"></label>
+                </div>
+                <div class="row-3">
+                    <label><select name="naturals">
+                        <option>Naturals</option>
+                        <option>Elements</option>
+                        <option>Exaner</option>
+                    </select></label>
+                    <label>Ac<input type="number" min="5" name="acNaturals"></label>
+                    <label>Mx<input type="number" min="5" readonly name="mxNaturals"></label>
                 </div>
                 <div class="row-4">
                     <p>H.P.</p>
-                    <label>Ac<input type="number" min="1"></label>
-                    <label>Mx<input type="number" min="1" readonly></label>
+                    <label>&#160; Ac<input type="number" min="1" name="acHP"></label>
+                    <label>Mx<input type="number" min="1" readonly name="mxHP"></label>
                     <p>C.P.</p>
-                    <label>Ac<input type="number" min="1"></label>
-                    <label>Mx<input type="number" min="1" readonly></label>                    
+                    <label>&#160; Ac<input type="number" min="1" name="acCP"></label>
+                    <label>Mx<input type="number" min="1" readonly name="mxCP"></label>
                 </div>
                 <div class="row-4">
-                    &nbsp;&nbsp;&#8195;&#8195;<label><p>N.A.</p><input type="number" min="1" readonly></label>
-                    <label><p>Arm</p><input type="number" min="1" readonly></label>
+                    &nbsp;&nbsp;&#8195;&#8195; <label><p>N.A.</p><input type="number" min="1" readonly name="na"></label>
+                    <label><p>Arm</p><input type="number" min="1" readonly name="arm"></label>
                     <p class="short">p</p>
-                    <label>Ac<input type="number" min="1"></label>
-                    <label>Mx<input type="number" min="1" readonly></label>                    
+                    <label>Ac<input type="number" min="1" name="acp"></label>
+                    <label>Mx<input type="number" min="1" readonly name="mxp"></label>
                 </div>
                 <div class="row-4">
                     <p>Res</p>
-                    <label>Ac<input type="number" min="5"></label>
-                    <label>Mx<input type="number" min="5" readonly></label>
+                    <label>&#160; Ac<input type="number" min="5" name="acRes"></label>
+                    <label>Mx<input type="number" min="5" readonly name="mxRes"></label>
                     <p>Ham</p>
-                    <label>Ac<input type="number" min="1"></label>
-                    <label>Mx<input type="number" min="1" readonly></label>                    
+                    <label>&#160; Ac<input type="number" min="1" name="acHam"></label>
+                    <label>Mx<input type="number" min="1" readonly name="mxHam"></label>
                 </div>
                 <div class="row-4">
                     <p>Cor</p>
-                    <label>%<input type="number" min="0" ></label>
-                    <label>-/d<input type="number" readonly></label>
+                    <label><span>%</span><input type="number" min="0" name="percentCor"></label>
+                    <label>&#160; -/d<input type="number" readonly name="minusCor"></label>
                     <p>Mad</p>
-                    <label>%<input type="number" min="0"></label>
-                    <label>-/d<input type="number" readonly></label>                    
+                    <label><span>%</span><input type="number" min="0" name="percentLoc"></label>
+                    <label>&#160; -/d<input type="number" readonly name="minusLoc"></label>
                 </div>
             </fieldset>
-            <fieldset class="atr">
-                    <p>Cons</p>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <p>Int</p>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <p>Per</p>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <p>Car</p>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Agil</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Clev</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Emp</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Pret</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>End</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Con</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Seek</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Mani</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Strg</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Ingi</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Dizz</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Sec</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Rap</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Wisd</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Sigh</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Sec</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Ref</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Tem</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <p>Hab</p>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <p>Psi</p>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Spd</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Will</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <span>Art</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <p>Esp</p>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <p>Ill</p>
-                    <label><input type="number"></label>
-                    <label class="herida">G<input type="number"></label>
-                    <label class="herida-2"><input type="text"></label>
-                    <span>Des</span>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <p>Luck</p>
-                    <label><input type="number"></label>
-                    <label class="luk"><select>
-                        <option value="">Choose</option>
-                        <option value="">Lucky</option>
-                        <option value="">Fortunate</option>
-                        <option value="">Hoodoo</option>
-                        <option value="">Unlucky</option></select></label>
-                    <label class="herida-3"><input type="text"></label>
-                    <label class="herida-4"><input type="text"></label> 
-                    <p>Dev</p>
-                    <label class="herida-5"><input type="text"></label>
-                    <label class="herida-6">D.P.<input type="number"></label>
-                    <p>Reg</p>
-                    <label><input type="number"></label>
-                    <label>/<input type="number" id="cap"></label>
-                    <label><input type="number"></label>
-                    <label class="herida-9"><select>
-                        <option value="">Choose</option>
-                        <option value="">None</option>
-                        <option value="">Superficial</option>
-                        <option value="">Scarred</option>
-                        <option value="">Visceral</option>
-                        <option value="">Structural</option>
-                        <option value="">Integral</option>
-                        <option value="">Hydra</option></select></label>
-                    <label class="herida-7"><input type="text"></label>
-                    <label class="herida-8"><input type="range" step="20"></label>
+            <fieldset class="atr" id="atr">
+                <p>Cons</p>
+                <label><input type="number" name="cons"></label>
+                <label>/<input type="number" class="cap" name="capCons"></label>
+                <label><input type="number" name="plusCons"></label>
+                <p>Int</p>
+                <label><input type="number" name="int"></label>
+                <label>/<input type="number" class="cap" name="capInt"></label>
+                <label><input type="number" name="plusInt"></label>
+                <p>Per</p>
+                <label><input type="number" name="per"></label>
+                <label>/<input type="number" class="cap" name="capPer"></label>
+                <label><input type="number" name="plusPer"></label>
+                <p>Car</p>
+                <label><input type="number" name="car"></label>
+                <label>/<input type="number" class="cap" name="capCar"></label>
+                <label><input type="number" name="plusCar"></label>
+                <span>Agil</span>
+                <label><input type="number" name="agil"></label>
+                <label>/<input type="number" class="cap" name="capAgil"></label>
+                <label><input type="number" name="plusAgil"></label>
+                <span>Clev</span>
+                <label><input type="number" name="clev"></label>
+                <label>/<input type="number" class="cap" name="capClev"></label>
+                <label><input type="number" name="plusClev"></label>
+                <span>Emp</span>
+                <label><input type="number" name="emp"></label>
+                <label>/<input type="number" class="cap" name="capEmp"></label>
+                <label><input type="number" name="plusEmp"></label>
+                <span>Pret</span>
+                <label><input type="number" name="pret"></label>
+                <label>/<input type="number" class="cap" name="capPret"></label>
+                <label><input type="number" name="plusPret"></label>
+                <span>End</span>
+                <label><input type="number" name="end"></label>
+                <label>/<input type="number" class="cap" name="capEnd"></label>
+                <label><input type="number" name="plusEnd"></label>
+                <span>Con</span>
+                <label><input type="number" name="con"></label>
+                <label>/<input type="number" class="cap" name="capCon"></label>
+                <label><input type="number" name="plusCon"></label>
+                <span>Seek</span>
+                <label><input type="number" name="seek"></label>
+                <label>/<input type="number" class="cap" name="capSeek"></label>
+                <label><input type="number" name="plusSeek"></label>
+                <span>Mani</span>
+                <label><input type="number" name="mani"></label>
+                <label>/<input type="number" class="cap" name="capMani"></label>
+                <label><input type="number" name="plusMani"></label>
+                <span>Strg</span>
+                <label><input type="number" name="strg"></label>
+                <label>/<input type="number" class="cap" name="capStrg"></label>
+                <label><input type="number" name="plusStrg"></label>
+                <span>Ingi</span>
+                <label><input type="number" name="ingi"></label>
+                <label>/<input type="number" class="cap" name="capIngi"></label>
+                <label><input type="number" name="plusIngi"></label>
+                <span>Dizz</span>
+                <label><input type="number" name="dizz"></label>
+                <label>/<input type="number" class="cap" name="capDizz"></label>
+                <label><input type="number" name="plusDizz"></label>
+                <span>Sec</span>
+                <label><input type="number" name="sec"></label>
+                <label>/<input type="number" class="cap" name="capSec"></label>
+                <label><input type="number" name="plusSec"></label>
+                <span>Rap</span>
+                <label><input type="number" name="rap"></label>
+                <label>/<input type="number" class="cap" name="capRap"></label>
+                <label><input type="number" name="plusRap"></label>
+                <span>Wisd</span>
+                <label><input type="number" name="wisd"></label>
+                <label>/<input type="number" class="cap" name="capWisd"></label>
+                <label><input type="number" name="plusWisd"></label>
+                <span>Sigh</span>
+                <label><input type="number" name="sigh"></label>
+                <label>/<input type="number" class="cap" name="capSigh"></label>
+                <label><input type="number" name="plusSigh"></label>
+                <span>Sec</span>
+                <label><input type="number" name="sec"></label>
+                <label>/<input type="number" class="cap" name="capSec"></label>
+                <label><input type="number" name="plusSec"></label>
+                <span>Ref</span>
+                <label><input type="number" name="ref"></label>
+                <label>/<input type="number" class="cap" name="capRef"></label>
+                <label><input type="number" name="plusRef"></label>
+                <span>Tem</span>
+                <label><input type="number" name="tem"></label>
+                <label>/<input type="number" class="cap" name="capTem"></label>
+                <label><input type="number" name="plusTem"></label>
+                <p>Hab</p>
+                <label><input type="number" name="hab"></label>
+                <label>/<input type="number" class="cap" name="capHab"></label>
+                <label><input type="number" name="plusHab"></label>
+                <p>Psi</p>
+                <label><input type="number" name="psi"></label>
+                <label>/<input type="number" class="cap" name="capPsi"></label>
+                <label><input type="number" name="plusPsi"></label>
+                <span>Spd</span>
+                <label><input type="number" name="spd"></label>
+                <label>/<input type="number" class="cap" name="capSpd"></label>
+                <label><input type="number" name="plusSpd"></label>
+                <span>Will</span>
+                <label><input type="number" name="will"></label>
+                <label>/<input type="number" class="cap" name="capWill"></label>
+                <label><input type="number" name="plusWill"></label>
+                <span>Art</span>
+                <label><input type="number" name="art"></label>
+                <label>/<input type="number" class="cap" name="capArt"></label>
+                <label><input type="number" name="plusArt"></label>
+                <p>Esp</p>
+                <label><input type="number" name="esp"></label>
+                <label>/<input type="number" class="cap" name="capEsp"></label>
+                <label><input type="number" name="plusEsp"></label>
+                <p>Illnes</p>
+                <label><input type="number" name="xG"></label>
+                <label class="herida">G<input type="number" name="Gx"></label>
+                <label class="herida-2"><input type="text" name="ill1"></label>
+                <span>Des</span>
+                <label><input type="number" name="des"></label>
+                <label>/<input type="number" class="cap" name="capDes"></label>
+                <label><input type="number" name="plusDes"></label>
+                <p>Luck</p>
+                <label><input type="number" name="luck"></label>
+                <label class="luk"><select name="luckSelect">
+                    <option>Choose</option>
+                    <option>Lucky</option>
+                    <option>Fortunate</option>
+                    <option>Hoodoo</option>
+                    <option>Unlucky</option>
+                </select></label>
+                <label class="herida-3"><input type="text" name="ill2"></label>
+                <label class="herida-4"><input type="text" name="ill3"></label>
+                <p>Dev</p>
+                <label class="herida-5"><input type="text" name="deity"></label>
+                <label class="herida-6">D.P.<input type="number" name="dp"></label>
+                <p>Reg</p>
+                <label><input type="number" name="reg"></label>
+                <label>/<input type="number" class="cap" name="capReg"></label>
+                <label><input type="number" name="plusReg"></label>
+                <label class="herida-9"><select name="regSelect">
+                    <option>Choose</option>
+                    <option>None</option>
+                    <option>Superficial</option>
+                    <option>Scarred</option>
+                    <option>Visceral</option>
+                    <option>Structural</option>
+                    <option>Integral</option>
+                    <option>Hydra</option>
+                </select></label>
+                <label class="herida-7"><input type="text" name="deityType"></label>
+                <label class="herida-8"><input type="range" value="0" step="20" name="rangeDev"></label>
             </fieldset>
-            <fieldset class="equipo">
+            <fieldset class="equipo" id="equipo">
                 <div class="faltr">
                     <p>Pouch:</p>
-                    <label><input type="number">Cb</label>
-                    <label><input type="number">Pt</label>
-                    <label><input type="number">Or</label>
-                    <label><input type="number">Pl</label>
-                    <label><input type="number"></label>
-                    <label><input type="text"></label>
-                    <label><input type="number"></label>
-                    <label><input type="text"></label>
-                    <label><input type="number"></label>
-                    <label><input type="text"></label>
+                    <label><input type="number" name="cb">Cb</label>
+                    <label><input type="number" name="pt">Pt</label>
+                    <label><input type="number" name="or">Or</label>
+                    <label><input type="number" name="pl">Pl</label>
+                    <label><input type="text" name="moneda1"></label>
+                    <label><input type="number" name="moneda1Cant"></label>
+                    <label><input type="text" name="moneda2"></label>
+                    <label><input type="number" name="moneda2Cant"></label>
+                    <label><input type="text" name="moneda3"></label>
+                    <label><input type="number" name="moneda3Cant"></label>
                 </div>
                 <aside class="casilla-pircing-izq">
                     <button type="button" class="abalorio"
@@ -385,167 +403,165 @@ body{
                     <dialog id="pircing-izq">
                         <p>Left earring</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">u<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="izqPir_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="izqPir_t"></label>
+                            <label class="casilla-numero">c<input type="number" name="izqPir_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="izqPir_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="izqPir_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="izqPir_u"></label>
                         </div>
                     </dialog>
                 </aside>
                 <aside class="casilla-pircing-dch">
-                    <button type="button" class="abalorio"
+                    <button type="button"  class="abalorio"
                         onclick="document.querySelector('#pircing-dch').showModal()">
                         <img src="/assets/img/casilla.png" alt="">
                     </button>
                     <dialog id="pircing-dch">
                         <p>Right earring</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">u<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="dchPir_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="dchPir_t"></label>
+                            <label class="casilla-numero">c<input type="number" name="dchPir_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="dchPir_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="dchPir_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="dchPir_u"></label>
                         </div>
                     </dialog>
                 </aside>
                 <aside class="casilla-cara">
                     <button type="button" class="abalorio"
                         onclick="document.querySelector('#cara').showModal()">
-                        <img src="/assets/img/casilla.png" alt="" >
+                        <img src="/assets/img/casilla.png" alt="">
                     </button>
                     <dialog id="cara">
                         <p>Face</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">u<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="cara_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="cara_t"></label>
+                            <label class="casilla-numero">c<input type="number" name="cara_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="cara_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="cara_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="cara_u"></label>
                         </div>
                     </dialog>
                 </aside>
                 <aside class="casilla-collar">
                     <button type="button" class="abalorio"
                         onclick="document.querySelector('#collar').showModal()">
-                        <img src="/assets/img/casilla.png" alt="" >
+                        <img src="/assets/img/casilla.png" alt="">
                     </button>
                     <dialog id="collar">
                         <p>Necklace</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">u<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="collar_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="collar_t"></label>
+                            <label class="casilla-numero">c<input type="number" name="collar_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="collar_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="collar_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="collar_u"></label>
                         </div>
                     </dialog>
                 </aside>
                 <aside class="casilla-tatoo">
                     <button type="button" class="abalorio"
                         onclick="document.querySelector('#tatoo').showModal()">
-                        <img src="/assets/img/casilla.png" alt="" >
+                        <img src="/assets/img/casilla.png" alt="">
                     </button>
                     <dialog id="tatoo">
                         <p>Tatoo</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">u<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="tatoo_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="tatoo_t"></label>
+                            <label class="casilla-numero">c<input type="number" name="tatoo_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="tatoo_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="tatoo_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="tatoo_u"></label>
                         </div>
                     </dialog>
                 </aside>
                 <aside class="casilla-kenwa">
                     <button type="button" class="abalorio"
                         onclick="document.querySelector('#kenwa').showModal()">
-                        <img src="/assets/img/casilla.png" alt="" >
+                        <img src="/assets/img/casilla.png" alt="">
                     </button>
                     <dialog id="kenwa">
                         <p>Kenwa</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">u<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="kenwa_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="kenwa_t"></label>
+                            <label class="casilla-numero">c<input type="number" name="kenwa_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="kenwa_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="kenwa_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="kenwa_u"></label>
                         </div>
                     </dialog>
                 </aside>
                 <aside class="casilla-pulsera-izq">
                     <button type="button" class="abalorio"
                         onclick="document.querySelector('#pulsera-izq').showModal()">
-                        <img src="/assets/img/casilla.png" alt="" >
+                        <img src="/assets/img/casilla.png" alt="">
                     </button>
                     <dialog id="pulsera-izq">
                         <p>Left bracelet</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">u<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="izqPulsera_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="izqPulsera_t"></label>
+                            <label class="casilla-numero">c<input type="number" name="izqPulsera_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="izqPulsera_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="izqPulsera_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="izqPulsera_u"></label>
                         </div>
                     </dialog>
-                </aside>
                 </aside>
                 <aside class="casilla-pulsera-dch">
                     <button type="button" class="abalorio"
                         onclick="document.querySelector('#pulsera-dch').showModal()">
-                        <img src="/assets/img/casilla.png" alt="" >
+                        <img src="/assets/img/casilla.png" alt="">
                     </button>
                     <dialog id="pulsera-dch">
                         <p>Right bracelet</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">u<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="dchPulsera_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="dchPulsera_t"></label>
+                            <label class="casilla-numero">c<input type="number" name="dchPulsera_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="dchPulsera_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="dchPulsera_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="dchPulsera_u"></label>
                         </div>
                     </dialog>
                 </aside>
                 <aside class="casilla-anillo-izq">
                     <button type="button" class="abalorio"
                         onclick="document.querySelector('#anillo-izq').showModal()">
-                        <img src="/assets/img/casilla.png" alt="" >
+                        <img src="/assets/img/casilla.png" alt="">
                     </button>
                     <dialog id="anillo-izq">
                         <p>Left ring</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">u<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="izqAnillo_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="izqAnillo_t"></label>
+                            <label class="casilla-numero">c<input type="number" name="izqAnillo_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="izqAnillo_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="izqAnillo_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="izqAnillo_u"></label>
                         </div>
                     </dialog>
-                </aside>
                 </aside>
                 <aside class="casilla-anillo-dch">
                     <button type="button" class="abalorio"
                         onclick="document.querySelector('#anillo-dch').showModal()">
-                        <img src="/assets/img/casilla.png" alt="" >
+                        <img src="/assets/img/casilla.png" alt="">
                     </button>
                     <dialog id="anillo-dch">
                         <p>Right ring</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">u<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="dchAnillo_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="dchAnillo_t"></label>
+                            <label class="casilla-numero">c<input type="number" name="dchAnillo_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="dchAnillo_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="dchAnillo_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="dchAnillo_u"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -557,15 +573,15 @@ body{
                     <dialog id="cabeza">
                         <p>Head</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="cabeza_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="cabeza_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="cabeza_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="cabeza_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="cabeza_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="cabeza_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="cabeza_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="cabeza_e"></label>
+                            <label class="casilla-peso">%d<input type="number" name="cabeza_d"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -577,18 +593,17 @@ body{
                     <dialog id="torso">
                         <p>Chest</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="torso_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="torso_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="torso_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="torso_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="torso_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="torso_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="torso_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="torso_e"></label>
+                            <label class="casilla-peso">%d<input type="number" name="torso_d"></label>
                         </div>
                     </dialog>
-                </aside>
                 </aside>
                 <aside class="casilla-cintura">
                     <button type="button"
@@ -598,15 +613,15 @@ body{
                     <dialog id="cintura">
                         <p>Waist</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="cintura_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="cintura_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="cintura_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="cintura_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="cintura_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="cintura_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="cintura_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="cintura_e"></label>
+                            <label class="casilla-peso">%d<input type="number" name="cintura_d"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -618,15 +633,15 @@ body{
                     <dialog id="hombro-izq">
                         <p>Left shoulder</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="izqHombro_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="izqHombro_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="izqHombro_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="izqHombro_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="izqHombro_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="izqHombro_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="izqHombro_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="izqHombro_e"></label>
+                            <label class="casilla-peso">%d<input type="number" name="izqHombro_d"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -638,15 +653,15 @@ body{
                     <dialog id="brazo-izq">
                         <p>Left arm</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="izqBrazo_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="izqBrazo_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="izqBrazo_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="izqBrazo_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="izqBrazo_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="izqBrazo_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="izqBrazo_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="izqBrazo_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="izqBrazo_u"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -658,15 +673,15 @@ body{
                     <dialog id="mano-izq">
                         <p>Left hand</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="izqMano_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="izqMano_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="izqMano_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="izqMano_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="izqMano_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="izqMano_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="izqMano_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="izqMano_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="izqMano_u"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -678,15 +693,15 @@ body{
                     <dialog id="pierna-izq">
                         <p>Left leg</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="izqPierna_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="izqPierna_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="izqPierna_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="izqPierna_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="izqPierna_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="izqPierna_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="izqPierna_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="izqPierna_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="izqPierna_u"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -698,15 +713,15 @@ body{
                     <dialog id="pie-izq">
                         <p>Left foot</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="izqPie_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="izqPie_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="izqPie_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="izqPie_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="izqPie_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="izqPie_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="izqPie_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="izqPie_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="izqPie_u"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -718,15 +733,15 @@ body{
                     <dialog id="hombro-dch">
                         <p>Right shoulder</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="dchHombro_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="dchHombro_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="dchHombro_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="dchHombro_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="dchHombro_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="dchHombro_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="dchHombro_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="dchHombro_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="dchHombro_u"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -738,15 +753,15 @@ body{
                     <dialog id="brazo-dch">
                         <p>Right arm</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="dchBrazo_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="dchBrazo_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="dchBrazo_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="dchBrazo_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="dchBrazo_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="dchBrazo_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="dchBrazo_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="dchBrazo_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="dchBrazo_u"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -758,15 +773,15 @@ body{
                     <dialog id="mano-dch">
                         <p>Right hand</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="dchMano_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="dchMano_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="dchMano_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="dchMano_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="dchMano_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="dchMano_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="dchMano_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="dchMano_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="dchMano_u"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -778,15 +793,15 @@ body{
                     <dialog id="pierna-dch">
                         <p>Right leg</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="dchPierna_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="dchPierna_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="dchPierna_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="dchPierna_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="dchPierna_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="dchPierna_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="dchPierna_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="dchPierna_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="dchPierna_u"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -798,18 +813,19 @@ body{
                     <dialog id="pie-dch">
                         <p>Right foot</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="dchPie_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="dchPie_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="dchPie_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="dchPie_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="dchPie_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="dchPie_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="dchPie_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="dchPie_e"></label>
+                            <label class="casilla-peso">u<input type="number" name="dchPie_u"></label>
                         </div>
                     </dialog>
                 </aside>
+
                 <aside class="casilla-arma">
                     <button type="button" class="largo"
                         onclick="document.querySelector('#arma').showModal()">
@@ -818,15 +834,15 @@ body{
                     <dialog id="arma">
                         <p>Weapon of choice</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso"><input type="text" value="D"></label>
+                            <label class="casilla-nombre"><input type="text" name="arma_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="arma_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="arma_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="arma_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="arma_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="arma_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="arma_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="arma_e"></label>
+                            <label class="casilla-peso"><input type="text" name="arma_d" value="D"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -838,15 +854,15 @@ body{
                     <dialog id="escudo">
                         <p>Shield</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso"><input type="text" value="D"></label>
+                            <label class="casilla-nombre"><input type="text" name="escudo_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="escudo_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="escudo_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="escudo_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="escudo_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="escudo_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="escudo_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="escudo_e"></label>
+                            <label class="casilla-peso"><input type="text" name="escudo_d" value="D"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -858,15 +874,15 @@ body{
                     <dialog id="vaina">
                         <p>Sheath</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="vaina_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="vaina_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="vaina_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="vaina_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="vaina_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="vaina_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="vaina_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="vaina_e"></label>
+                            <label class="casilla-peso">%d<input type="number" name="vaina_d"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -878,15 +894,15 @@ body{
                     <dialog id="magic">
                         <p>Lorness</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso"><input type="text" value="D"></label>
+                            <label class="casilla-nombre"><input type="text" name="magic_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="magic_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="magic_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="magic_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="magic_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="magic_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="magic_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="magic_e"></label>
+                            <label class="casilla-peso"><input type="text" name="magic_d" value="D"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -898,15 +914,15 @@ body{
                     <dialog id="range">
                         <p>Range weapon</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-numero">a<input type="number"></label>
-                            <label class="casilla-numero">p<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso"><input type="text" value="D"></label>
+                            <label class="casilla-nombre"><input type="text" name="range_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="range_t"></label>
+                            <label class="casilla-numero">a<input type="number" name="range_a"></label>
+                            <label class="casilla-numero">p<input type="number" name="range_p"></label>
+                            <label class="casilla-texto">m<input type="text" name="range_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="range_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="range_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="range_e"></label>
+                            <label class="casilla-peso"><input type="text" name="range_d" value="D"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -918,20 +934,20 @@ body{
                     <dialog id="carcaj">
                         <p>Quiver</p>
                         <div>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">Mx<input type="text"></label>
-                            <label class="casilla-texto"><input type="text"></label>
-                            <label class="casilla-peso">ac<input type="number"></label>
-                            <label class="casilla-texto"><input type="text"></label>
-                            <label class="casilla-peso">ac<input type="number"></label>
-                            <label class="casilla-texto"><input type="text"></label>
-                            <label class="casilla-peso">ac<input type="number"></label>
-                            <label class="casilla-texto"><input type="text"></label>
-                            <label class="casilla-peso">ac<input type="number"></label>
-                            <label class="casilla-texto"><input type="text"></label>
-                            <label class="casilla-peso">ac<input type="number"></label>
-                            <label class="casilla-texto"><input type="text"></label>
-                            <label class="casilla-peso">ac<input type="number"></label>
+                            <label class="casilla-texto">e<input type="text" name="carcaj_e"></label>
+                            <label class="casilla-peso">Mx<input type="text" name="carcaj_mx"></label>
+                            <label class="casilla-texto"><input type="text" name="carcaj_text1"></label>
+                            <label class="casilla-peso">ac<input type="number" name="carcaj_ac1"></label>
+                            <label class="casilla-texto"><input type="text" name="carcaj_text2"></label>
+                            <label class="casilla-peso">ac<input type="number" name="carcaj_ac2"></label>
+                            <label class="casilla-texto"><input type="text" name="carcaj_text3"></label>
+                            <label class="casilla-peso">ac<input type="number" name="carcaj_ac3"></label>
+                            <label class="casilla-texto"><input type="text" name="carcaj_text4"></label>
+                            <label class="casilla-peso">ac<input type="number" name="carcaj_ac4"></label>
+                            <label class="casilla-texto"><input type="text" name="carcaj_text5"></label>
+                            <label class="casilla-peso">ac<input type="number" name="carcaj_ac5"></label>
+                            <label class="casilla-texto"><input type="text" name="carcaj_text6"></label>
+                            <label class="casilla-peso">ac<input type="number" name="carcaj_ac6"></label>
                         </div>
                     </dialog>
                 </aside>
@@ -945,57 +961,56 @@ body{
                     <dialog id="bolsa">
                         <p>Main Bag</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-peso">Mx<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="bolsa_name"></label>
+                            <label class="casilla-texto">t<input type="text" name="bolsa_t"></label>
+                            <label class="casilla-peso">Mx<input type="number" name="bolsa_mx"></label>
+                            <label class="casilla-texto">m<input type="text" name="bolsa_m"></label>
+                            <label class="casilla-numero">c<input type="number" name="bolsa_c"></label>
+                            <label class="casilla-numero">r<input type="number" name="bolsa_r"></label>
+                            <label class="casilla-texto">e<input type="text" name="bolsa_e"></label>
+                            <label class="casilla-peso">%d<input type="number" name="bolsa_d"></label>
                         </div>
                     </dialog>
                 </aside>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objeto1Name"></label>
+                    <label>u<input type="number" name="objeto1_u"></label>
+                    <label>p<input type="number" name="objeto1_p"></label>
                 </div>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objeto2Name"></label>
+                    <label>u<input type="number" name="objeto2_u"></label>
+                    <label>p<input type="number" name="objeto2_p"></label>
                 </div>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objeto3Name"></label>
+                    <label>u<input type="number" name="objeto3_u"></label>
+                    <label>p<input type="number" name="objeto3_p"></label>
                 </div>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objeto4Name"></label>
+                    <label>u<input type="number" name="objeto4_u"></label>
+                    <label>p<input type="number" name="objeto4_p"></label>
                 </div>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                
-                <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objeto5Name"></label>
+                    <label>u<input type="number" name="objeto5_u"></label>
+                    <label>p<input type="number" name="objeto5_p"></label>
                 </div>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objeto6Name"></label>
+                    <label>u<input type="number" name="objeto6_u"></label>
+                    <label>p<input type="number" name="objeto6_p"></label>
                 </div>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objeto7Name"></label>
+                    <label>u<input type="number" name="objeto7_u"></label>
+                    <label>p<input type="number" name="objeto7_p"></label>
+                </div>
+                <div class="row-bolsa">
+                    <label><input type="text" name="objeto8Name"></label>
+                    <label>u<input type="number" name="objeto8_u"></label>
+                    <label>p<input type="number" name="objeto8_p"></label>
                 </div>
             </fieldset>
             <fieldset class="inv2" id="inv2">
@@ -1007,57 +1022,56 @@ body{
                     <dialog id="bolsa">
                         <p>Other Bag</p>
                         <div>
-                            <label class="casilla-nombre"><input type="text"></label>
-                            <label class="casilla-texto">t<input type="text"></label>
-                            <label class="casilla-peso">Mx<input type="number"></label>
-                            <label class="casilla-texto">m<input type="text"></label>
-                            <label class="casilla-numero">c<input type="number"></label>
-                            <label class="casilla-numero">r<input type="number"></label>
-                            <label class="casilla-texto">e<input type="text"></label>
-                            <label class="casilla-peso">%d<input type="number"></label>
+                            <label class="casilla-nombre"><input type="text" name="bolsa2name"></label>
+                            <label class="casilla-texto">t<input type="text" name="bolsa2t"></label>
+                            <label class="casilla-peso">Mx<input type="number" name="bolsa2mx"></label>
+                            <label class="casilla-texto">m<input type="text" name="bolsa2m"></label>
+                            <label class="casilla-numero">c<input type="number" name="bolsa2c"></label>
+                            <label class="casilla-numero">r<input type="number" name="bolsa2r"></label>
+                            <label class="casilla-texto">e<input type="text" name="bolsa2e"></label>
+                            <label class="casilla-peso">%d<input type="number" name="bolsa2d"></label>
                         </div>
                     </dialog>
                 </aside>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objetoSec1_name"></label>
+                    <label>u<input type="number" name="objetoSec1_u"></label>
+                    <label>p<input type="number" name="objetoSec1_p"></label>
                 </div>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objetoSec2_name"></label>
+                    <label>u<input type="number" name="objetoSec2_u"></label>
+                    <label>p<input type="number" name="objetoSec2_p"></label>
                 </div>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objetoSec3_name"></label>
+                    <label>u<input type="number" name="objetoSec3_u"></label>
+                    <label>p<input type="number" name="objetoSec3_p"></label>
                 </div>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objetoSec4_name"></label>
+                    <label>u<input type="number" name="objetoSec4_u"></label>
+                    <label>p<input type="number" name="objetoSec4_p"></label>
                 </div>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
-                </div>
-                
-                <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objetoSec5_name"></label>
+                    <label>u<input type="number" name="objetoSec5_u"></label>
+                    <label>p<input type="number" name="objetoSec5_p"></label>
                 </div>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objetoSec6_name"></label>
+                    <label>u<input type="number" name="objetoSec6_u"></label>
+                    <label>p<input type="number" name="objetoSec6_p"></label>
                 </div>
                 <div class="row-bolsa">
-                    <label><input type="text" name="" id=""></label>
-                    <label>u<input type="number" name="" id=""></label>
-                    <label>p<input type="number" name="" id=""></label>
+                    <label><input type="text" name="objetoSec7_name"></label>
+                    <label>u<input type="number" name="objetoSec7_u"></label>
+                    <label>p<input type="number" name="objetoSec7_p"></label>
+                </div>
+                <div class="row-bolsa">
+                    <label><input type="text" name="objetoSec8_name"></label>
+                    <label>u<input type="number" name="objetoSec8_u"></label>
+                    <label>p<input type="number" name="objetoSec8_p"></label>
                 </div>
             </fieldset>
         </form>
