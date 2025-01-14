@@ -5,7 +5,7 @@ a   {text-decoration: none; color: black;}
 }
 /*Reset*/
 body{
-    background-image: url(../assets/img/fondoNocturnoUno.jpg);
+    background-image: url(/assets/img/fondoNocturnoUno.jpg);
     background-size: 100%;
 }
 header {
