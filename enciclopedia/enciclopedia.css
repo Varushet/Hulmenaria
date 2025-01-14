@@ -1,5 +1,5 @@
 main{
-    background-image: url(/assets/img/fondo_pergamino.png);
+    background-image: url(assets/img/fondo_pergamino.png);
     background-size: contain /*contain*/;
     background-repeat: no-repeat;
     display: flex;
@@ -27,7 +27,7 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    background-image: url(/assets/img/enciclopedia.png);
+    background-image: url(assets/img/enciclopedia.png);
     background-size: 100% 100%;
 }
 article{
@@ -39,7 +39,7 @@ article{
 article div{
     margin: 2rem;
     min-width: 15rem;
-    background-image: url(/enciclopedia/img/libroC.png);
+    background-image: url(enciclopedia/img/libroC.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -51,7 +51,7 @@ article h4{
 }
 .prev, .post{
     position: absolute;
-    background-image: url(/assets/img/flecha.png);
+    background-image: url(assets/img/flecha.png);
     background-size: 100% 100%;
     width: 8rem;
     height: 8rem;
@@ -74,7 +74,7 @@ article h4{
 .glosario{
     width: 95%;
     height: 95vh;
-    background-image: url(/enciclopedia/img/libroOC.png);
+    background-image: url(enciclopedia/img/libroOC.png);
     background-size: 100% 100%;
     margin: 2rem;
     position: relative;
@@ -114,7 +114,7 @@ div h5{
 .entrada{
     width: 95%;
     height: 95vh;
-    background-image: url(/enciclopedia/img/libroOC.png);
+    background-image: url(enciclopedia/img/libroOC.png);
     background-size: 100% 100%;
     margin: 2rem;
     position: relative;
@@ -136,7 +136,7 @@ div h5{
 .aling{grid-area: 17 / 2 / 19 / 7;}
 /*La parte de la imagen*/
 .card-1 .criatura{
-    background-image: url(/enciclopedia/img/Ciudadano.jpeg);
+    background-image: url(enciclopedia/img/Ciudadano.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0rem -8rem;
