@@ -1,5 +1,5 @@
 main{
-    background-image: url(../assets/img/fondo_pergamino.png);
+    background-image: url(../assets/img/fondoPergamino.png);
     background-size: contain /*contain*/;
     background-repeat: no-repeat;
     display: flex;
@@ -136,7 +136,7 @@ div h5{
 .aling{grid-area: 17 / 2 / 19 / 7;}
 /*La parte de la imagen*/
 .card-1 .criatura{
-    background-image: url(../enciclopedia/img/Ciudadano.jpeg);
+    background-image: url(../enciclopedia/img/ciudadano.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0rem -8rem;

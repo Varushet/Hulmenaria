@@ -5,21 +5,25 @@ aside{
     position:relative;
     overflow: scroll;
     z-index: 10;
-    padding: 0rem 0 0 1rem ;
     width: 10%;
     height: 100vh;
-    background-color: rgb(56, 216, 170);
+    background-image: url(../assets/img/pergaminoAnuncio.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 aside div{
     overflow: scroll;
-    top: 0;
+}
+aside ul{
+    margin-left: 0.5rem;
 }
 aside ul li{
     margin: 1rem;
-    list-style:unset;
+    list-style:unset;9
 }
 aside h5{
-    text-align: center;
+    padding: unset;
+    margin-top: 7rem;
 }
 .fondo{
     position: absolute;
@@ -30,7 +34,7 @@ aside h5{
 }
 section{
     width: 285rem;
-    background-image: url(../assets/img/Fondo_pergamino.png);
+    background-image: url(../assets/img/fondoPergamino.png);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 8rem 14rem;

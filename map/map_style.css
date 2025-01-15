@@ -18,7 +18,7 @@ h5{
 }
 .mapas>button{
     background: transparent;
-    background-image: url(../assets/img/flecha.png);
+    background-image: url(../assets/iconos/flecha.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 8rem;
@@ -89,7 +89,7 @@ aside li{
 }
 .marco button{
     opacity: 0.2;
-    background: url(../assets/img/selector-blanco.png) no-repeat;
+    background: url(../assets/iconos/selectorBlanco.svg) no-repeat;
     background-size: 100% 100%;
     color: white;
     border: none;

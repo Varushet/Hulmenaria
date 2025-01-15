@@ -4,7 +4,6 @@ main{
     overflow: scroll;
 }
 form{
-    background-image: url(../assets/img/fondo_pergamino.png);
     background-repeat: no-repeat;
     background-size:cover;
     width: 4224px;
@@ -14,6 +13,9 @@ form{
     position: relative;
 }
 fieldset{
+    background-image: url(../assets/img/fondoPergamino.png);
+    background-size: 110% 110%;
+    background-position: left;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -23,7 +25,7 @@ fieldset{
     border: none;
 }
 section{
-    background-image: url(../assets/img/fondo_pergamino.png);
+    background-image: url(../assets/img/pergaminoAnuncio.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 20rem;
@@ -36,7 +38,7 @@ section{
 section h2{
     font-family: "UnifrakturMaguntia" ;
     font-size: 4rem;
-    padding: 2rem 0;
+    padding: 6rem 0 0rem 0;
     color: var(--dorado);
     text-shadow: 
     1px 1px 0px black, 
@@ -51,8 +53,8 @@ section a{
     margin: 2rem;
 }
 section img{
-    width: 100%;
-    height: 98%;
+    width: 15rem;
+    height: 20rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -60,7 +62,6 @@ section img{
 }
 .equipo{
     height: 80rem;
-    background-image: url(../assets/img/fondo_charcter.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -75,17 +76,17 @@ section img{
     justify-content: center;
     max-height: 45rem;
     position: absolute;
-    bottom: 10rem;
+    bottom: 5rem;
     right: 5rem;
 }
 .identidad{
     position: absolute;
-    bottom: 60rem;
-    left: 5rem;
+    top: 5rem;
+    right: 5rem;
 }
 .poder{
     position: absolute;
-    bottom: 60rem;
+    bottom: 52rem;
     right: 5rem;
 }
 .poder label{
@@ -165,7 +166,7 @@ dialog{
     padding: 1rem;
     border: none;
     background: transparent;
-    background-image: url(../assets/img/fondo_pergamino.png);
+    background-image: url(../assets/img/fondoPergamino.png);
     background-size: contain;
     background-repeat: no-repeat;
     text-align: center;
@@ -298,7 +299,7 @@ input[type="range"]::-moz-range-thumb {
     width: 4rem;
     height: 4rem;
     background: transparent;
-    background-image: url(../assets/img/Selector.png);
+    background-image: url(../assets/iconos/selector.svg);
     background-repeat: no-repeat;
     background-size:cover ;
     border: none;
@@ -391,9 +392,6 @@ fieldset button:hover img{
     background-color: rgba(150, 80, 22, 0.405);
     border: none;
     border-radius: 2rem;
-    background-image: url(../perfil/img/pieza.png);
-    background-size: cover;
-    aspect-ratio: 1/1;
 }
 .inv button, .inv2 button{
     background: transparent;
@@ -409,8 +407,8 @@ fieldset button:hover img{
 .inv .expand, .inv2 .expand{
     width: 15%;
     border: none;
-    background-image: url(../perfil/img/pieza.png);
-    background-size: cover;
+    background-image: url(../assets/iconos/casilla.svg);
+    background-size: contain;
     background-repeat: no-repeat;
     margin: 0 1rem;
 }
@@ -466,9 +464,9 @@ aside[class*="casilla"]{
 .casilla-range{bottom: 1rem; right: 1rem;}
 .casilla-carcaj{bottom: 17rem; right: 1rem;}
 
-.casilla-arma button {background-image: url(../perfil/img/pieza.png);}
-.casilla-escudo button{background-image: url(../perfil/img/pieza.png);}
-.casilla-vaina button{background-image: url(../perfil/img/pieza.png);}
+.casilla-arma button {background-image: url(../assets/);}
+.casilla-escudo button{background-image: url(../assets/);}
+.casilla-vaina button{background-image: url(../assets/);}
 
 .casilla-nombre{
     width: 95%;

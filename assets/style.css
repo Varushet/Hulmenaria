@@ -19,21 +19,21 @@ header {
 }
 #Sbridge{
     transition: 2s;
-    background-image: url(../assets/img/Scastle-hover.png);
+    background-image: url(../assets/adornos/castilloHoverS.png);
     background-size: 75% 95%;
     background-repeat: no-repeat;
     background-position: 50% 8rem;
 }
 #Mbridge{
     transition: 2s;
-    background-image: url(../assets/img/castle-hover.png);
+    background-image: url(../assets/adornos/castilloHover.png);
     background-size: 65% 95% ;
     background-repeat: no-repeat;
     background-position:  50% 8rem;
 }
 #Lbridge{
     transition: 2s;
-    background-image: url(../assets/img/castle-hover.png);
+    background-image: url(../assets/adornos/castilloHover.png);
     background-size: 100% 95% ;
     background-repeat: no-repeat;
     background-position: 50% 8rem;
@@ -41,7 +41,7 @@ header {
 }
 #Lbridge:hover{
     transition: 2s;
-    background-image: url(../assets/img/castle-hover.png);
+    background-image: url(../assets/adornos/castilloHover.png);
     background-size: 100% 95% ;
     background-repeat: no-repeat;
     background-position: center;
@@ -162,7 +162,7 @@ nav img{
 }
 #roadmap:checked ~ #roadmap-lab>#Mbridge{
     transition: 2s;
-    background-image: url(../assets/img/castle-hover.png);
+    background-image: url(../assets/adornos/castilloHover.png);
     background-size: 65% 95% ;
     background-repeat: no-repeat;
     background-position: center;
