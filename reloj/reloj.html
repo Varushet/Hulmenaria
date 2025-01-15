@@ -47,13 +47,67 @@
             </div>
         </div>
     </nav>
-    <aside>
-        <section>
-            <h3>Time line</h3>
-            <div>
-                <img src="../assets/img/timebar.png" alt="Time bar">
+    <section>
+            <!-- <div class="velas" id="velas">               
             </div>
-        </section>
-    </aside>
+            <div class="eventos">
+                uno de los botones será un dialog, con 15 inputs dentro, cada uno creará el 
+                interior del texto de cada uno de estos eventos
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div> -->
+            <div class="tiempo" id="tiempo">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+    </section>
+    <main>
+        <aside>
+        </aside>
+        <div class="reloj">
+            <img src="../assets/img/roseton.png" alt="" class="boton">
+            <img src="../assets/img/roseton.png" alt="" class="boton">
+            <img src="../assets/img/roseton.png" alt="Decorative rosette" id="roseton">
+            <img src="../assets/img/roseton.png" alt="" class="boton">
+            <img src="../assets/img/roseton.png" alt="" class="boton">
+        </div>
+    </main>
+    <script>
+        const roseton = document.getElementById('roseton');
+        const tiempo = document.getElementById('tiempo');
+
+            roseton.addEventListener('click', function(){
+                let accion = document.createElement('img');
+                accion.src = '../assets/iconos/seccion.svg';
+
+                tiempo.appendChild(accion);
+            });
+    </script>
 </body>
 </html>
