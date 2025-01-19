@@ -48,66 +48,43 @@
         </div>
     </nav>
     <section>
-            <!-- <div class="velas" id="velas">               
-            </div>
-            <div class="eventos">
-                uno de los botones será un dialog, con 15 inputs dentro, cada uno creará el 
-                interior del texto de cada uno de estos eventos
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </div> -->
             <div class="tiempo" id="tiempo">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
             </div>
     </section>
     <main>
         <aside>
+            <div class="evento" id="horarioEventos">
+                <label><select name="elegirHora" id="elegirHora">
+                    <option value="nueve">9:00</option>
+                    <option value="diez">10:00</option>
+                    <option value="once">11:00</option>
+                    <option value="doce">12:00</option>
+                    <option value="trece">13:00</option>
+                    <option value="catorce">14:00</option>
+                    <option value="quince">15:00</option>
+                    <option value="dieciseis">16:00</option>
+                    <option value="diecisiete">17:00</option>
+                    <option value="dieciocho">18:00</option>
+                    <option value="diecinueve">19:00</option>
+                    <option value="veinte">20:00</option>
+                    <option value="veintiuno">21:00</option>
+                    <option value="veintidos">22:00</option>
+                    <option value="veintitres">23:00</option>
+                </select></label>
+                <label><input type="text" name="tituloDelEvento" id="tituloDelEvento"></label>
+                <label><textarea name="anadirEvento" id="anadirEvento"></textarea></label>
+                <button type="button" class="buttEvento" id="buttEvento">Create Event</button>
+            </div>
         </aside>
-        <div class="reloj">
-            <img src="../assets/img/roseton.png" alt="" class="boton">
+        <div class="reloj" id="reloj">
+            <img src="../assets/img/roseton.png" alt="" class="boton" id="evento">
             <img src="../assets/img/roseton.png" alt="" class="boton">
             <img src="../assets/img/roseton.png" alt="Decorative rosette" id="roseton">
             <img src="../assets/img/roseton.png" alt="" class="boton">
-            <img src="../assets/img/roseton.png" alt="" class="boton">
+            <img src="../assets/img/roseton.png" alt="" class="boton" id="cierre">
         </div>
+       
     </main>
-    <script>
-        const roseton = document.getElementById('roseton');
-        const tiempo = document.getElementById('tiempo');
-
-            roseton.addEventListener('click', function(){
-                let accion = document.createElement('img');
-                accion.src = '../assets/iconos/seccion.svg';
-
-                tiempo.appendChild(accion);
-            });
-    </script>
+    <script src="reloj.js"></script>
 </body>
 </html>

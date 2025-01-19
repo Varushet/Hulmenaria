@@ -1,6 +1,7 @@
 main{
     height: 80vh;
     display: flex;
+    position: relative;
 } 
 section{
     background-image: url(../assets/img/cieloDiaNoche.jpg);
@@ -12,43 +13,8 @@ section{
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
-}/*
-section .velas{
-    margin: 0 0.2rem;
-    display: flex;
-    width: 100%;
 }
-section .velas img{
-    background-color: rgb(15, 95, 165);
-    width: 5rem;
-    margin-left: 0.27rem;
-}
-.eventos{
-    position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
-    display: flex;
-    align-items: center;
-}
-.eventos p{
-    background-color: brown;
-    border: 2px solid black;
-    width: 10rem;
-    height: 6.3rem;
-    margin: 0.23rem;
-    margin-left: -5.2rem;
-    transition: 1s;
-}
-.eventos p:first-child{
-    margin-left: 0;
-}
-.eventos p:hover{
-    background-color: brown;
-    width: 40rem;
-    height: 6.3rem;
-}*/
 section .tiempo{
-    background-color: aqua;
     display: grid;
     grid-template: 70% 30% / repeat(15, 1fr);
     margin: 0 auto;
@@ -56,23 +22,57 @@ section .tiempo{
     height: 90%;
     
 }
-.tiempo p{
+.tiempo span{
     border: 1px solid black;
     box-sizing: border-box;
+    overflow: hidden;
     min-width: 0rem;
+    height: auto;
     transition: 1s;
+    display: flex;
+    flex-direction: column;
+    word-break: break-word;
 }
-.tiempo p:hover{
+.tiempo span:hover{
     min-width: 40rem;
+    background-color: rgba(240, 255, 255, 0.473);
+}
+.tiempo span:hover p{
+    opacity: 1;
 }
 .tiempo img{
-    border: 1px solid black;
     width:100%;
     height: 100%;
     box-sizing: border-box;
 }
+.tiempo h6{
+    font-size: 1.4rem;
+}
+.tiempo p{
+    opacity: 0;
+    font-size: 0.8rem;
+}
+
+.nueve{grid-column: 1;}
+.diez{grid-column: 2;}
+.once{grid-column: 3;}
+.doce{grid-column: 4;}
+.trece{grid-column: 5;}
+.catorce{grid-column: 6;}
+.quince{grid-column: 7;}
+.dieciseis{grid-column: 8;}
+.diecisiete{grid-column: 9;}
+.dieciocho{grid-column: 10;}
+.diecinueve{grid-column: 11;}
+.veinte{grid-column: 12;}
+.veintiuno{grid-column: 13;}
+.veintidos{grid-column: 14;}
+.veintitres{grid-column: 15;}
+
+.filaEvento{grid-row: 1;}
+.filaVelas{grid-row: 2;}
+
 aside{
-    background-color: aqua;
     width: 20rem;
     height: 100%;
 }
@@ -94,4 +94,47 @@ aside{
 }
 .reloj .boton{
     width: 10rem;
+}
+.evento{
+    display: none;
+    width: 16rem;
+    height: 5rem;
+    background-image: url(../assets/img/pergaminoAnuncio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+.evento label{
+    width: 100%;
+}
+.evento select{
+    background: transparent;
+    text-align: center;
+    width: 85%;
+    margin: 4rem 1rem 0.5rem 1.2rem;
+}
+.evento input{
+    background-color: rgba(92, 92, 92, 0.308);
+    height: 2rem;
+    margin: 0 2rem 0.5rem 3.2rem;
+}
+.evento textarea{
+    background-color: rgba(92, 92, 92, 0.308);
+    border: none;
+    width: 12rem;
+    height: 15rem;
+    margin: 0 1.8rem;
+}
+.evento .buttEvento{
+    background-color: black;
+    background-image: url(../assets/adornos/marcoVidriera.png);
+    background-size: 100% 100%;
+    color: white;
+    height: 3rem;
+    width: 6rem;
+    margin: 0.5rem 5rem;
+    border: none;
+}
+#cierre{
+    filter: hue-rotate(140deg);
 }
