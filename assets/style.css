@@ -1,13 +1,23 @@
 *   {padding: 0; margin: 0;}
 a   {text-decoration: none; color: black;}
+li  {list-style: none;}
 :root{
     --dorado: rgb(202, 134, 7);
+    --marron: rgb(14, 9, 7);
+    --wheat: wheat;
+    --purpura:  rgba(68, 48, 88, 0.87);
 }
 /*Reset*/
 body{
     background-image: url(../assets/img/fondoNocturnoUno.jpg);
-    background-size: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
+
+/*header*/
+
 header {
     display: flex;
     justify-content: space-around;
@@ -15,8 +25,11 @@ header {
     padding: 2rem;
 }
 .logo img{
-    width: 6rem;
+    width: 4rem;
 }
+
+        /*Bridge decor*/
+
 #Sbridge{
     transition: 2s;
     background-image: url(../assets/adornos/castilloHoverS.png);
@@ -47,18 +60,24 @@ header {
     background-position: center;
     background-origin: bottom;
 }
-        /*Bridge decor*/
+
+/*títulos*/
+
 h1{ /*Hulmenaria*/
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: "UnifrakturMaguntia";
     color:  var(--dorado);
 }
-h2{ /*Página*/
-    margin: 0 auto;
+h2{ /*nav*/
+    margin: unset;
 }
 h3{ /*Section*/
-    font-family: "MedievalSharp";
+    font-size: 1.7rem;
     text-align: center;
+    font-family: "MedievalSharp";
+    padding: 2rem 0 1rem 0;
+    margin: 0 auto;
+    width: 20rem;
 }
 h4{ /*Article*/
     font-size: 1.7rem;
@@ -78,119 +97,155 @@ h5{ /*Nombres Propios*/
 h6{ /**/
     margin: 0 auto;
 }
+
+/*nav*/
+
 nav{
     background: transparent;
-}
-.tools div{
-    margin: 0.5rem;
-    border: 5px double black;
-}
-nav img{
-    width: 9rem;
-}
-#butt{
-    display: none;
-}
-.tools {
-    justify-content: center;
-    display: flex;
-    position: relative;
-    z-index: -1;
-    position: none;
-    max-height: 0;
-    opacity: 0;
-    transition: 2s ease;
-}
-#butt:checked ~ #tools{
-    z-index: 1;
-    opacity: 1;
-    max-height: 20rem;
-    transition: 2s;
-}
-#butt:checked ~ #navi-lab>#Mbridge{
-    transition: 2s;
-    background-position: center;
-}
-                                                /*Navegador*/
-.team{
-    background-color: rgba(255, 192, 203, 0.486);
-}
-                                                /*Team*/
-.sts{
-    background-color: rgba(140, 116, 164, 0.8);
-    width: 50%;
-}
-.sts li{
-    list-style: none;
-}
-.bar{
-    background-color: greenyellow;
-    width: 80%;
-    height: 10px;
-    border-radius: 1rem;
-}
-.list{
-    column-count: 2;
-    height: auto;
-}
-.list > li{
-    margin: 0 0.2rem;
-}
-#roadmap{
-    display: none;
-}
-.road{
+    width: 100%;
+    height: 24rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    position: relative;
-    z-index: -1;
-    max-height: 0;
-    opacity: 0;
-    transition: 2s ease;
-    max-width: 100vw;
     overflow: hidden;
 }
-#roadmap:checked ~ #road{
-    display: flex;
-    padding: 2rem 3rem;
-    z-index: 1;
-    height: 40rem;
-    opacity: 1;
-    max-height: 50rem;
-    max-width: 90%;
-}
-#roadmap:checked ~ #roadmap-lab>#Mbridge{
-    transition: 2s;
-    background-image: url(../assets/adornos/castilloHover.png);
-    background-size: 65% 95% ;
+nav [class*='menu']{
+    background-image: url(../assets/img/fondoPergamino.png);
+    background-size: 200% 100%;
     background-repeat: no-repeat;
-    background-position: center;
-}
-                                                /*Pestaña Roadmap*/
-footer{
-    background-color: brown;
+    width: 60%;
+    height: 6rem;
+    margin: 1rem 0;
     display: flex;
-    justify-content: space-around;
+    text-align: center;
     align-items: center;
+    position: relative;
+    transition: 1s;
+    box-sizing: border-box;
+}
+nav .menu-izq{
+    background-position: right;
+    left: -5rem;
+}
+nav .menu-izq:hover{
+    left: 0;
+}
+nav .menu-dch{
+    background-position: left;
+    right: 0rem;
+}
+nav .menu-dch:hover{
+    right: 5rem;
+}
+nav .menu-izq h2{
+    margin-left: 1.5rem;
+    opacity: 0;
+    transition: 1s;
+}
+nav .menu-dch h2{
+    word-break: break-word;
+    margin-right: 1rem;
+    opacity: 0;
+    transition: 1s;
+}
+nav [class*='menu']:hover h2{
+    opacity: 1;
+}
+nav img{
+    width: 5rem;
+    margin: 0 2.2rem;
+}
+/*Roadmap*/
+#roadmap{
+    height: 17.3rem;
+    background-color: var(--purpura);
+    width: 90%;
+    margin-inline: 5%;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    position: absolute;
+    top: 35rem;
+    box-sizing: border-box;
+    transition: 1s;
+}
+#roadmap h3{
+    cursor: pointer;
+}
+#roadmap .road{
+    margin: 0 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95%;
+    max-height: 80rem;
+}
+#roadmap .road .sts{
+    height: 12rem;
+}
+#roadmap .road .sts p{
+    font-size: 1.5rem;
+}
+/*barra de progreso de cada sts*/
+#roadmap .road input[type='range']{
+    initial-value: 0;
+}
+#roadmap .road .bar{
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 1rem;
+    background-color: rebeccapurple;
+}
+#roadmap .road .bar::-moz-range-thumb{
+    background: transparent;
+    display: none;
+    border: none;
+}
+#roadmap .road .bar::-webkit-slider-thumb{
+    background: transparent;
+    display: none;
+    border: none;
+}
+#roadmap .road .bar::-moz-range-progress{
+    background: rgb(113, 143, 69);
+    height: 100%;
+    border-radius: 1rem;
+}
+#roadmap .road .bar::-webkit-slider-thumb{
+    background: rgb(113, 143, 69);
+    height: 100%;
+    border-radius: 1rem;
+}
+
+/*Pie de página*/
+
+footer{
+    background-color: var(--marron);
+    position: absolute;
+    bottom: -18rem;
+    width: 100%;
+    color: wheat;
 }
 footer img{
-    width: 2rem;
+    width: 6rem;
+}
+footer .pie {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .social{
-    width: 15rem;
-    display: flex;
-    justify-content: space-around;
-}
-.location{
-    width: 10rem;
+    width: 50%;
+    height: 5rem;
+    margin-inline: 10%;
     text-align: center;
 }
-.about{
+.crp{
+    background-color: ;
     text-align: center;
-}
-.cop{
-    background-color: blue;
-    text-align: center;
-    position: bottom;
+    height: 1rem;
+    position: absolute;
+    bottom: 0.5rem;
 }

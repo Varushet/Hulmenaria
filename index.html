@@ -8,203 +8,192 @@
     <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=MedievalSharp&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
-<style>
-
-</style>
 <body>
     <header>
+        <div class="logo">
+            <a href="../hulmenaria/index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+         </div>
         <h1>Hulmenaria</h1>
         <div class="logo">
            <a href="../hulmenaria/index.html"><img src="assets/img/logo.png" alt="Logo"></a>
         </div>
-        <div>Log In</div>
     </header>
     <nav>
-        <input type="checkbox" id="butt">
-        <label for="butt" id="navi-lab"><h4 id="Mbridge">RPG Tools</h4></label>
-        <div class="tools" id="tools">
-            <div>
-                <h2>PJ Sheet</h2>
-                <a href="perfil/perfil.html"><img src="assets/img/ficha.png" alt="Character sheet"></a>
-            </div>
-            <div>
-                <h2>Talents</h2>
-                <a href="talentos/talentos.html#civilCentro"><img src="assets/img/logo.png" alt="Talents icon"></a>
-            </div>
-            <div>
-                <h2>Hourglass</h2>
-                <a href="reloj/reloj.html"><img src="assets/img/relojDeArena.png" alt="Hourglass icon"></a>
-            </div>
-            <div>
-                <h2>Loot Table</h2>
-                <a href="#"><img src="assets/img/cofre.png" alt="Loot icon"></a>
-            </div>
-            <div>
-                <h2>Encyclopedia</h2>
-                <a href="enciclopedia/enciclopedia.html"><img src="assets/img/enciclopedia.png" alt="Encyclopedia icon"></a>
-            </div>
-            <div>
-                <h2>Map</h2>
-                <a href="map/map-index.html"><img src="assets/img/mapa.png" alt="Map icon"></a>
-            </div>
+        <div class="menu-izq">
+            <h2>PJ Sheet</h2>
+            <a href="perfil/perfil.html"><img src="assets/img/ficha.png" alt="Character sheet"></a>
+        </div>
+        <div class="menu-izq">
+            <h2>Talents</h2>
+            <a href="talentos/talentos.html#civilCentro"><img src="assets/img/logo.png" alt="Talents icon"></a>
+        </div>
+        <div class="menu-izq">
+            <h2>Loot Table</h2>
+            <a href="#"><img src="assets/img/cofre.png" alt="Loot icon"></a>
+        </div>
+        <div class="menu-dch">
+            <a href="map/map-index.html"><img src="assets/img/mapa.png" alt="Map icon"></a>
+            <h2>Map</h2>
+        </div>
+        <div class="menu-dch">
+            <a href="reloj/reloj.html"><img src="assets/img/relojDeArena.png" alt="Hourglass icon"></a>
+            <h2>Hourglass</h2>
+        </div>
+        <div class="menu-dch">
+            <a href="enciclopedia/enciclopedia.html"><img src="assets/img/enciclopedia.png" alt="Encyclopedia icon"></a>
+            <h2>Encyclopedia</h2>
         </div>
     </nav>
     <main>
-        <article class="team">
-            <h4 id="Lbridge">Hulmenaria Team</h4>
-            <img src="" alt="Personal Photo">
-            <p>Alejandro Serrato - Varushet</p>
-        </article>
-        <section>
-                <input type="checkbox" id="roadmap">
-                <label for="roadmap" id="roadmap-lab">
-                    <h4 id="Mbridge">Roadmap</h4></label>
+        <section id="roadmap">
+            <h3>Roadmap</h3>
             <div class="road" id="road">
-                <div class="sts">Web Status
-                    <div class="bar"></div>
+                <div class="sts">
+                    <p>Web Status</p>
+                    <label for="bar1"><input type="range" class="bar" value="0" id="bar1" disabled></label>
                         <ul class="list">
-                            <li><input type="checkbox" disabled>Design</li>
-                            <li><input type="checkbox" disabled>Content</li>
-                            <li><input type="checkbox" disabled>Themes</li>
-                            <li><input type="checkbox" disabled>Functions</li>
-                            <li><input type="checkbox" disabled>Tools</li>
-                            <li><input type="checkbox" disabled>Compatibility</li>
-                            <li><input type="checkbox" disabled>Integrations</li>
-                            <li><input type="checkbox" disabled>Plug-in</li>
+                            <li><label for="web1"><input type="checkbox" id="web1" disabled checked>Design</label></li>
+                            <li><label for="web2"><input type="checkbox" id="web2" disabled checked>Content</label></li>
+                            <li><label for="web3"><input type="checkbox" id="web3" disabled>Themes</label></li>
+                            <li><label for="web4"><input type="checkbox" id="web4" disabled>Functions</label></li>
+                            <li><label for="web5"><input type="checkbox" id="web5" disabled>Tools</label></li>
+                            <li><label for="web6"><input type="checkbox" id="web6" disabled>Compatibility</label></li>
+                            <li><label for="web7"><input type="checkbox" id="web7" disabled>Integrations</label></li>
+                            <li><label for="web8"><input type="checkbox" id="web8" disabled>Plug-in</label></li>
                         </ul>
                 </div>
-                <div class="sts">App Status
-                    <div class="bar"></div>
+                <div class="sts">
+                    <p>App Status</p>
+                    <label for="bar2"><input type="range" class="bar" value="0" id="bar2" disabled></label>
                     <ul class="list">
-                        <li><input type="checkbox" disabled>Design</li>
-                        <li><input type="checkbox" disabled>Content</li>
-                        <li><input type="checkbox" disabled>Themes</li>
-                        <li><input type="checkbox" disabled>Functions</li>
-                        <li><input type="checkbox" disabled>Tools</li>
-                        <li><input type="checkbox" disabled>Android</li>
-                        <li><input type="checkbox" disabled>IOS</li>
-                        <li><input type="checkbox" disabled>Deskopt</li>
+                        <li><label for="app1"><input type="checkbox" id="app1" disabled>Design</label></li>
+                        <li><label for="app2"><input type="checkbox" id="app2" disabled>Content</label></li>
+                        <li><label for="app3"><input type="checkbox" id="app3" disabled>Themes</label></li>
+                        <li><label for="app4"><input type="checkbox" id="app4" disabled>Functions</label></li>
+                        <li><label for="app5"><input type="checkbox" id="app5" disabled>Tools</label></li>
+                        <li><label for="app6"><input type="checkbox" id="app6" disabled>Android</label></li>
+                        <li><label for="app7"><input type="checkbox" id="app7" disabled>IOS</label></li>
+                        <li><label for="app8"><input type="checkbox" id="app8" disabled>Deskopt</label></li>
                     </ul>
                 </div>
-                <div class="sts">Community
-                    <div class="bar"></div>
+                <div class="sts">
+                    <p>Dice Roller</p>
+                    <label for="bar3"><input type="range" class="bar" value="0" id="bar3" disabled></label>
                     <ul class="list">
-                        <li><input type="checkbox" disabled>Developers</li>
-                        <li><input type="checkbox" disabled>Patrons</li>
-                        <li><input type="checkbox" disabled>Moderators</li>
-                        <li><input type="checkbox" disabled>Followers</li>
-                        <li><input type="checkbox" disabled>Intranet</li>
-                        <li><input type="checkbox" disabled>Social Networks</li>
+                        <li><label for="dice1"><input type="checkbox" id="dice1" disabled>Mechanism</label></li>
+                        <li><label for="dice2"><input type="checkbox" id="dice2" disabled>Buff edit</label></li>
+                        <li><label for="dice3"><input type="checkbox" id="dice3" disabled>Roll story</label></li>
+                        <li><label for="dice4"><input type="checkbox" id="dice4" disabled>Share roll</label></li>
+                        <li><label for="dice5"><input type="checkbox" id="dice5" disabled>Theme</label></li>
+                        <li><label for="dice6"><input type="checkbox" id="dice6" disabled>Unity 3D</label></li>
+                        <li><label for="dice7"><input type="checkbox" id="dice7" disabled>In table</label></li>
                     </ul>
                 </div>
-                <div class="sts">Translation
-                    <div class="bar"></div>
+                <div class="sts">
+                    <p>Pj Sheet</p>
+                    <label for="bar4"><input type="range" class="bar" value="0" id="bar4" disabled></label>
                     <ul class="list">
-                        <li><input type="checkbox" disabled checked>English</li>
-                        <li><input type="checkbox" disabled>Spanish</li>
-                        <li><input type="checkbox" disabled>French</li>
-                        <li><input type="checkbox" disabled>German</li>
-                        <li><input type="checkbox" disabled>Italian</li>
-                        <li><input type="checkbox" disabled>Chinese</li>
+                        <li><label for="pj1"><input type="checkbox" id="pj1" disabled checked>Design</label></li>
+                        <li><label for="pj2"><input type="checkbox" id="pj2" disabled>Interactive</label></li>
+                        <li><label for="pj3"><input type="checkbox" id="pj3" disabled>Editable</label></li>
+                        <li><label for="pj4"><input type="checkbox" id="pj4" disabled>Tool linked</label></li>
+                        <li><label for="pj5"><input type="checkbox" id="pj5" disabled>Miniature</label></li>
+                        <li><label for="pj6"><input type="checkbox" id="pj6" disabled>Profile</label></li>
                     </ul>
                 </div>
-                <div class="sts">Fundation
-                    <div class="bar"></div>
+                <div class="sts">
+                    <p>Community</p>
+                    <label for="bar5"><input type="range" class="bar" value="0" id="bar5" disabled></label>
                     <ul class="list">
-                        <li><input type="checkbox" disabled><a href="#">Patreon</a></li>
-                        <li><input type="checkbox" disabled><a href="#">Kickstarter</a></li>
-                        <li><input type="checkbox" disabled><a href="#">Donations</a></li>
+                        <li><label for="com1"><input type="checkbox" id="com1" disabled>Developers</label></li>
+                        <li><label for="com2"><input type="checkbox" id="com2" disabled>Patrons</label></li>
+                        <li><label for="com3"><input type="checkbox" id="com3" disabled>Moderators</label></li>
+                        <li><label for="com4"><input type="checkbox" id="com4" disabled>Followers</label></li>
+                        <li><label for="com5"><input type="checkbox" id="com5" disabled>Intranet</label></li>
+                        <li><label for="com6"><input type="checkbox" id="com6" disabled>Social Networks</label></li>
                     </ul>
                 </div>
-                <div class="sts">Dice Roller Status
-                    <div class="bar"></div>
+                <div class="sts">
+                    <p>Translation</p>
+                    <label for="bar6"><input type="range" class="bar" value="0" id="bar6" disabled></label>
                     <ul class="list">
-                        <li><input type="checkbox" disabled>Mechanism</li>
-                        <li><input type="checkbox" disabled>Buff edit</li>
-                        <li><input type="checkbox" disabled>Roll story</li>
-                        <li><input type="checkbox" disabled>Share roll</li>
-                        <li><input type="checkbox" disabled>Theme</li>
-                        <li><input type="checkbox" disabled>Unity 3D</li>
-                        <li><input type="checkbox" disabled>In table</li>
+                        <li><label for="trans1"><input type="checkbox" id="trans1" disabled checked>English</label></li>
+                        <li><label for="trans2"><input type="checkbox" id="trans2" disabled>Spanish</label></li>
+                        <li><label for="trans3"><input type="checkbox" id="trans3" disabled>French</label></li>
+                        <li><label for="trans4"><input type="checkbox" id="trans4" disabled>German</label></li>
+                        <li><label for="trans5"><input type="checkbox" id="trans5" disabled>Italian</label></li>
+                        <li><label for="trans6"><input type="checkbox" id="trans6" disabled>Chinese</label></li>
                     </ul>
                 </div>
-                <div class="sts">Pj Sheet Status
-                    <div class="bar"></div>
+                <div class="sts">
+                    <p>Loot Table</p>
+                    <label for="bar7"><input type="range" class="bar" value="0" id="bar7" disabled></label>
                     <ul class="list">
-                        <li><input type="checkbox" disabled>Design</li>
-                        <li><input type="checkbox" disabled>Interactive</li>
-                        <li><input type="checkbox" disabled>Editable</li>
-                        <li><input type="checkbox" disabled>Tool linked</li>
-                        <li><input type="checkbox" disabled>Miniature</li>
-                        <li><input type="checkbox" disabled>Profile</li>
+                        <li><label for="loot1"><input type="checkbox" id="loot1" disabled>Mechanism</label></li>
+                        <li><label for="loot2"><input type="checkbox" id="loot2" disabled>Value gradient</label></li>
+                        <li><label for="loot3"><input type="checkbox" id="loot3" disabled>Creation</label></li>
+                        <li><label for="loot4"><input type="checkbox" id="loot4" disabled>Libraries</label></li>
+                        <li><label for="loot5"><input type="checkbox" id="loot5" disabled>Animation</label></li>
                     </ul>
                 </div>
-                <div class="sts">Loot Table Status
-                    <div class="bar"></div>
+                <div class="sts">
+                    <p>Encyclopedia</p>
+                    <label for="bar8"><input type="range" class="bar" value="0" id="bar8" disabled></label>
                     <ul class="list">
-                        <li><input type="checkbox" disabled>Mechanism</li>
-                        <li><input type="checkbox" disabled>Value gradient</li>
-                        <li><input type="checkbox" disabled>Creation</li>
-                        <li><input type="checkbox" disabled>Libraries</li>
-                        <li><input type="checkbox" disabled>Animation</li>
+                        <li><label for="enc1"><input type="checkbox" id="enc1" disabled>Templates</label></li>
+                        <li><label for="enc2"><input type="checkbox" id="enc2" disabled>Pictures</label></li>
+                        <li><label for="enc3"><input type="checkbox" id="enc3" disabled>Interactive</label></li>
+                        <li><label for="enc4"><input type="checkbox" id="enc4" disabled>Libraries</label></li>
+                        <li><label for="enc5"><input type="checkbox" id="enc5" disabled>Decoration</label></li>
                     </ul>
                 </div>
-                <div class="sts">Encyclopedia Status
-                    <div class="bar"></div>
+                <div class="sts">
+                    <p>Map Status</p>
+                    <label for="bar9"><input type="range" class="bar" value="0" id="bar9" disabled></label>
                     <ul class="list">
-                        <li><input type="checkbox" disabled>Templates</li>
-                        <li><input type="checkbox" disabled>Pictures</li>
-                        <li><input type="checkbox" disabled>Interactive</li>
-                        <li><input type="checkbox" disabled>Libraries</li>
-                        <li><input type="checkbox" disabled>Decoration</li>
+                        <li><label for="map1"><input type="checkbox" id="map1" disabled>Map plans</label></li>
+                        <li><label for="map2"><input type="checkbox" id="map2" disabled>Navigable</label></li>
+                        <li><label for="map3"><input type="checkbox" id="map3" disabled>Interactive</label></li>
+                        <li><label for="map4"><input type="checkbox" id="map4" disabled>Layers</label></li>
+                        <li><label for="map5"><input type="checkbox" id="map5" disabled>Jurney calc</label></li>
                     </ul>
                 </div>
-                <div class="sts">Map Status
-                    <div class="bar"></div>
+                <div class="sts">
+                    <p>Fundation</p>
+                    <label for="bar10"><input type="range" class="bar" value="0" id="bar10" disabled></label>
                     <ul class="list">
-                        <li><input type="checkbox" disabled>Map plans</li>
-                        <li><input type="checkbox" disabled>Navigable</li>
-                        <li><input type="checkbox" disabled>Interactive</li>
-                        <li><input type="checkbox" disabled>Layers</li>
-                        <li><input type="checkbox" disabled>Jurney calc</li>
+                        <li><label for="fund1"><input type="checkbox" id="fund1" disabled><a href="#">Patreon</a></label></li>
+                        <li><label for="fund2"><input type="checkbox" id="fund2" disabled><a href="#">Kickstarter</a></label></li>
+                        <li><label for="fund3"><input type="checkbox" id="fund3" disabled><a href="#">Donations</a></label></li>
                     </ul>
                 </div>
-                <div class="sts">Game Table Status
-                    <div class="bar"></div>
+                <div class="sts">
+                <p>Game Table</p>
+                    <label for="bar11"><input type="range" class="bar" value="0" id="bar11" disabled></label>
                     <ul class="list">
-                        <li><input type="checkbox" disabled>aaaa</li>
-                        <li><input type="checkbox" disabled>aaaa</li>
-                        <li><input type="checkbox" disabled>aaaa</li>
-                        <li><input type="checkbox" disabled>aaaa</li>
-                        <li><input type="checkbox" disabled>aaaa</li>
-                        <li><input type="checkbox" disabled>aaaa</li>
+                        <li><label for="game1"><input type="checkbox" id="game1" disabled>aaaa</label></li>
+                        <li><label for="game2"><input type="checkbox" id="game2" disabled>aaaa</label></li>
+                        <li><label for="game3"><input type="checkbox" id="game3" disabled>aaaa</label></li>
+                        <li><label for="game4"><input type="checkbox" id="game4" disabled>aaaa</label></li>
+                        <li><label for="game5"><input type="checkbox" id="game5" disabled>aaaa</label></li>
+                        <li><label for="game6"><input type="checkbox" id="game6" disabled>aaaa</label></li>
                     </ul>
                 </div>
-            </div>
         </section>
     </main>
     <footer>
-        <div class="location">
-            <h3>LOCATION</h3>
-            <p>48993 Getxo, Bizkaia, Basque Country</p>
-        </div>
-        <div>
-            <h3>Social Networks</h3>
+        <h4 id="Lbridge">Hulmenaria Team</h4>
+        <img src="" alt="Creator Photo">
+        <p>Alejandro Serrato - Varushet</p>
+        <div class="pie">
+            <img src="../assets/img/logo.png" alt="Logo">
             <div class="social">
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/426px-Discord_Logo_sans_texte.svg.png" alt="Discord"></a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/426px-Discord_Logo_sans_texte.svg.png" alt="Instagram"></a>
-                <a href="https://discord.com/channels/697897720865751091/774173789196910602"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/426px-Discord_Logo_sans_texte.svg.png" alt="Discord"></a>
-                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/426px-Discord_Logo_sans_texte.svg.png" alt="Twitch"></a>
-                <a href="https://github.com/Varushet/RPG"><img src="https://upload.wikimedia.org/wikipedia/fr/thumb/4/4f/Discord_Logo_sans_texte.svg/426px-Discord_Logo_sans_texte.svg.png" alt="GitHub"></a>
+                facebook y asín
+            </div>
+            <div class="crp">
+                el about y esas cosas
             </div>
         </div>
-        <div class="about">
-            <h3>ABOUT</h3>
-            <p>aaaa</p>
-        </div>
     </footer>
-    <div class="cop">
-        <p>Copyright &copy; Your Website 2024</p>
-    </div>
+    <script src="../assets/index.js"></script>
 </body>
-</html>
